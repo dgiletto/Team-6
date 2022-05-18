@@ -40,7 +40,7 @@ jobs:
             - name: GitInspector
               run: |
                   git clone https://github.com/jpwhite3/gitinspector.git
-                  python ./gitinspector/gitinspector.py ./ -f tsx,ts --grading -F html -x ./gitinspector > ./public/git_report.html
+                  python ./gitinspector/gitinspector.py ${{github.repository}} -f tsx,ts --grading -F html -x ./gitinspector > ./public/git_report.html
             - run: npm run build --if-present
 
             - name: Deploy
