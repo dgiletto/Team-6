@@ -37,6 +37,10 @@ jobs:
             - run: npm run lint
             - run: npm run test -- --coverage |& tee ./public/test_report.txt
             - run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./public/github.html
+            - name: GitInspector
+              run: |
+                  npm i -g gitinspector
+                  gitinspector ./ -f tsx,ts --grading -F html > ./public/git_report.html
             - run: npm run build --if-present
 
             - name: Deploy
