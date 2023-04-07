@@ -8,7 +8,8 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <p>
-                Dylan Giletto, Rana Tuncer, Eric Kang, Victor Tung, Kayla Roth
+                Dylan Giletto, Rana Tuncer, Eric Kang, Victor Tung, Kayla Roth,
+                Evan Watson
             </p>
         </div>
     );
