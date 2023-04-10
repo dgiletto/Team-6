@@ -5,9 +5,9 @@ export class Account {
     password: string;
     admin: boolean; // Whether they're admin
 
-    constructor(name: string) {
-        this.username = name;
-    }
+    // constructor(name: string) {
+    //     this.username = name;
+    // }
 }
 
 // class User extends Account {
