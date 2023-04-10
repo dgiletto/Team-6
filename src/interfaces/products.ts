@@ -4,4 +4,5 @@ export interface Product {
     price: number; // Cost of item
     quantity: number; // # item in stock
     in_stock: boolean; // If item in stock
+    type: string;
 }
