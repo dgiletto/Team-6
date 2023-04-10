@@ -1,6 +1,6 @@
 //import { Product } from "./products";
 //import { Order } from "./orders";
-export class Account {
+export interface Account {
     username: string;
     password: string;
     admin: boolean; // Whether they're admin
