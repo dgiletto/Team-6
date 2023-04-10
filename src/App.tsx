@@ -1,5 +1,8 @@
 import React from "react";
 import "./App.css";
+//import { Product } from "./interfaces/products";
+//import { Order } from "./interfaces/orders";
+//import { Account } from "./interfaces/accounts";
 
 function App(): JSX.Element {
     return (
