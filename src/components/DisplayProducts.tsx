@@ -2,6 +2,7 @@ import { Product } from "../interfaces/products";
 import React, { useState } from "react";
 import { Button, Row, Col } from "react-bootstrap";
 import prodsList from "../data/products.json";
+import { images } from "../images";
 
 const { PRODUCTS }: Record<string, Product[]> = prodsList as Record<
     string,
@@ -32,7 +33,10 @@ export function DisplayProducts(): JSX.Element {
                     {allProducts.map((product: Product) => (
                         <div key={product.name} style={{ marginBottom: "4px" }}>
                             <div>
-                                <img src={product.image} alt="Product Image" />
+                                <img
+                                    src={images[product.image]}
+                                    alt="Product Image"
+                                />
                                 <div>{product.name}</div>
                             </div>
                             <Button onClick={() => add2Cart(product)} size="sm">
