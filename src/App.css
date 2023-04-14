@@ -16,7 +16,7 @@
 .App-header {
     width: 100%;
     background-color: #829fda;
-    min-height: 20vh;
+    min-height: calc(50px + 10vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +24,21 @@
 }
 
 .Website-name {
-    font-size: 8vmin;
+    font-size: 50px;
+    font-family: sans-serif, bold;
     text-align: left;
-    margin-left: 2%
+    margin-left: 2%;
+}
+
+.Navigation-bar {
+    background-color: beige;
+    font-size: calc(10px + 2vh);
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: calc(35px + 2vh);
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .App-link {
