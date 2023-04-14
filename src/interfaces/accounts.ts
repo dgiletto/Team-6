@@ -1,20 +1,16 @@
-//import { Product } from "./products";
-//import { Order } from "./orders";
+// import { Product } from "./products";
+// import { Order } from "./orders";
 export interface Account {
     username: string;
     password: string;
     admin: boolean; // Whether they're admin
-
-    // constructor(name: string) {
-    //     this.username = name;
-    // }
 }
 
-// class User extends Account {
+// interface User extends Account {
 //     cart: [Product];
-//     p_orders: [string];
+//     past_orders: [Order];
 // }
 
-// class Admin extends Account {
-//     p_orders: [Order];
+// interface Admin extends Account {
+//     view_orders: [Order];
 // }
