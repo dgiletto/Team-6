@@ -1,5 +1,4 @@
 import { Product } from "../interfaces/products";
-//import { PRODUCTS } from "../data/products.json";
 import React, { useState } from "react";
 import { Button, Row, Col } from "react-bootstrap";
 import prodsList from "../data/products.json";
@@ -32,9 +31,12 @@ export function DisplayProducts(): JSX.Element {
                 <Col>
                     {allProducts.map((product: Product) => (
                         <div key={product.name} style={{ marginBottom: "4px" }}>
-                            Add{" "}
+                            <div>
+                                <img src={product.image} alt="Product Image" />
+                                <div>{product.name}</div>
+                            </div>
                             <Button onClick={() => add2Cart(product)} size="sm">
-                                {product.name}
+                                Add to Cart
                             </Button>
                         </div>
                     ))}
