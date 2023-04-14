@@ -29,8 +29,9 @@ export function DisplayProducts(): JSX.Element {
         <div>
             <h3>Choose Products</h3>
             <Row>
-                <Col>
-                    {allProducts.map((product: Product) => (
+                {allProducts.map((product: Product) => (
+                    // eslint-disable-next-line react/jsx-key
+                    <Col>
                         <div key={product.name} style={{ marginBottom: "4px" }}>
                             <div>
                                 <img
@@ -43,8 +44,8 @@ export function DisplayProducts(): JSX.Element {
                                 Add to Cart
                             </Button>
                         </div>
-                    ))}
-                </Col>
+                    </Col>
+                ))}
                 <Col>
                     <strong>Cart:</strong>
                     {cart.map((product: Product) => (

@@ -9,7 +9,8 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript
+                <div className="Website-name">Website Name</div>
+                {/*<Cart></Cart>*/}
             </header>
             <hr></hr>
             <DisplayProducts></DisplayProducts>
