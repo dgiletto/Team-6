@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Team-6/static/css/main.39f589df.css",
-    "main.js": "/Team-6/static/js/main.9140d413.js",
+    "main.css": "/Team-6/static/css/main.e5e340fe.css",
+    "main.js": "/Team-6/static/js/main.74eb1dba.js",
     "static/js/787.9a502bfc.chunk.js": "/Team-6/static/js/787.9a502bfc.chunk.js",
     "static/media/MBD-X11SAE-resize.jpeg": "/Team-6/static/media/MBD-X11SAE-resize.aac2df892b3307e021a0.jpeg",
     "static/media/i9-13900k-resize.png": "/Team-6/static/media/i9-13900k-resize.c0140cdc3ccc4086bbac.png",
@@ -11,12 +11,12 @@
     "static/media/Powercolor-Radeon-6600-resize.jpeg": "/Team-6/static/media/Powercolor-Radeon-6600-resize.12ae1bb75f0520f04c38.jpeg",
     "static/media/MBD-Dell_PE_R720V1-resize.jpeg": "/Team-6/static/media/MBD-Dell_PE_R720V1-resize.05169e7122e63255cd1f.jpeg",
     "index.html": "/Team-6/index.html",
-    "main.39f589df.css.map": "/Team-6/static/css/main.39f589df.css.map",
-    "main.9140d413.js.map": "/Team-6/static/js/main.9140d413.js.map",
+    "main.e5e340fe.css.map": "/Team-6/static/css/main.e5e340fe.css.map",
+    "main.74eb1dba.js.map": "/Team-6/static/js/main.74eb1dba.js.map",
     "787.9a502bfc.chunk.js.map": "/Team-6/static/js/787.9a502bfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39f589df.css",
-    "static/js/main.9140d413.js"
+    "static/css/main.e5e340fe.css",
+    "static/js/main.74eb1dba.js"
   ]
 }
