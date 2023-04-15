@@ -37,12 +37,21 @@
     display: flex;
     justify-content: space-evenly;
     min-height: calc(35px + 2vh);
-    padding-left: 25%;
-    padding-right: 25%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.button {
+    background-color: #829fda;
+    border: none;
+}
+
+.NavLinks {
+    text-decoration: none;
 }
 
 .App-link {
-    color: #61dafb;
+    color: #000000;
 }
 
 @keyframes App-logo-spin {
