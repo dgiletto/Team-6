@@ -15,18 +15,43 @@
 
 .App-header {
     width: 100%;
-    background-color: #282c34;
-    min-height: 40vh;
+    background-color: #829fda;
+    min-height: calc(50px + 10vh);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
 }
 
+.Website-name {
+    font-size: 50px;
+    font-family: sans-serif, bold;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.Navigation-bar {
+    background-color: beige;
+    font-size: calc(10px + 2vh);
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: calc(35px + 2vh);
+    padding: 20px;
+    margin: 20px;
+}
+
+.button {
+    background-color: #829fda;
+    border: none;
+}
+
+.NavLinks {
+    text-decoration: none;
+}
+
 .App-link {
-    color: #61dafb;
+    color: #000000;
 }
 
 @keyframes App-logo-spin {

@@ -20,17 +20,18 @@ export function DisplayProducts(): JSX.Element {
         setAllProducts(allProducts);
     }
 
-    function clearCart() {
+    /*function clearCart() {
         const newCart: Product[] = [];
         setCart(newCart);
-    }
+    }*/
 
     return (
         <div>
             <h3>Choose Products</h3>
             <Row>
-                <Col>
-                    {allProducts.map((product: Product) => (
+                {allProducts.map((product: Product) => (
+                    // eslint-disable-next-line react/jsx-key
+                    <Col>
                         <div key={product.name} style={{ marginBottom: "4px" }}>
                             <div>
                                 <img
@@ -39,20 +40,26 @@ export function DisplayProducts(): JSX.Element {
                                 />
                                 <div>{product.name}</div>
                             </div>
-                            <Button onClick={() => add2Cart(product)} size="sm">
+                            <Button
+                                className="button"
+                                onClick={() => add2Cart(product)}
+                                size="sm"
+                            >
                                 Add to Cart
                             </Button>
                         </div>
-                    ))}
-                </Col>
-                <Col>
-                    <strong>Cart:</strong>
-                    {cart.map((product: Product) => (
-                        <li key={product.name}>{product.name}</li>
-                    ))}
-                    <Button onClick={clearCart}>Clear Cart</Button>
-                </Col>
+                    </Col>
+                ))}
             </Row>
         </div>
     );
 }
+
+/*<Col> 
+    <strong>Cart:</strong>
+        {cart.map((product: Product) => (
+            <li key={product.name}>{product.name}</li>
+        ))}
+    <Button onClick={clearCart}>Clear Cart</Button>
+</Col> After line 53
+*/
