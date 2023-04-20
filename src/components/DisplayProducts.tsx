@@ -20,10 +20,10 @@ export function DisplayProducts(): JSX.Element {
         setAllProducts(allProducts);
     }
 
-    /*function clearCart() {
+    function clearCart() {
         const newCart: Product[] = [];
         setCart(newCart);
-    }*/
+    }
 
     return (
         <div>
@@ -50,16 +50,14 @@ export function DisplayProducts(): JSX.Element {
                         </div>
                     </Col>
                 ))}
+                <Col>
+                    <strong>Cart:</strong>
+                    {cart.map((product: Product) => (
+                        <li key={product.name}>{product.name}</li>
+                    ))}
+                    <Button onClick={clearCart}>Clear Cart</Button>
+                </Col>
             </Row>
         </div>
     );
 }
-
-/*<Col>
-    <strong>Cart:</strong>
-        {cart.map((product: Product) => (
-            <li key={product.name}>{product.name}</li>
-        ))}
-    <Button onClick={clearCart}>Clear Cart</Button>
-</Col> After line 53
-*/
