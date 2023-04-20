@@ -68,6 +68,15 @@ const Navigation = () => {
             >
                 Cases
             </NavLink>
+            <NavLink
+                className="NavLinks"
+                style={({ isActive }) =>
+                    isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                }
+                to="/Cart"
+            >
+                Cart
+            </NavLink>
         </div>
     );
 };
