@@ -55,7 +55,7 @@ export function DisplayProducts(): JSX.Element {
     );
 }
 
-/*<Col> 
+/*<Col>
     <strong>Cart:</strong>
         {cart.map((product: Product) => (
             <li key={product.name}>{product.name}</li>

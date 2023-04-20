@@ -9,6 +9,7 @@ import Rams from "./RamPage";
 import MBoards from "./MBoardPage";
 import Storage from "./StoragePage";
 import Cases from "./CasesPage";
+import Cart from "./CartPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
 //import { Account } from "./interfaces/accounts";
@@ -35,6 +36,7 @@ function App(): JSX.Element {
                         <Route path="/MBoards" Component={MBoards} />
                         <Route path="/Storage" Component={Storage} />
                         <Route path="Cases" Component={Cases} />
+                        <Route path="Cart" Component={Cart} />
                     </Routes>
                 </BrowserRouter>
             </div>
