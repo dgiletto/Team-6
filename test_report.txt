@@ -17,7 +17,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (153 ms)
+  ✕ renders the course name somewhere (163 ms)
 
   ● renders the course name somewhere
 
@@ -96,6 +96,13 @@ FAIL src/App.test.tsx
               [36m>[39m
                 [0mCases[0m
               [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"NavLinks"[39m
+                [33mhref[39m=[32m"/Cart"[39m
+                [33mstyle[39m=[32m"color: rgb(130, 159, 218);"[39m
+              [36m>[39m
+                [0mCart[0m
+              [36m</a>[39m
             [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
@@ -123,9 +130,10 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   42.85 |    43.75 |      45 |   42.85 |                   
- src                   |   22.22 |      100 |    12.5 |   22.22 |                   
+All files              |   39.39 |    44.44 |   41.66 |   39.39 |                   
+ src                   |      20 |      100 |   11.11 |      20 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
+  CartPage.tsx         |       0 |      100 |       0 |       0 | 4                 
   CasesPage.tsx        |       0 |      100 |       0 |       0 | 4                 
   GraphicsCardPage.tsx |       0 |      100 |       0 |       0 | 4                 
   Home.tsx             |       0 |      100 |       0 |       0 | 5                 
@@ -134,10 +142,10 @@ All files              |   42.85 |    43.75 |      45 |   42.85 |
   RamPage.tsx          |       0 |      100 |       0 |       0 | 4                 
   StoragePage.tsx      |       0 |      100 |       0 |       0 | 4                 
   images.tsx           |     100 |      100 |     100 |     100 |                   
- src/components        |   52.63 |    43.75 |   66.66 |   52.63 |                   
+ src/components        |   47.82 |    44.44 |      60 |   47.82 |                   
   Cart.tsx             |       0 |        0 |       0 |       0 |                   
-  DisplayProducts.tsx  |      10 |        0 |       0 |      10 | 13-45             
-  Navigation.tsx       |     100 |       50 |     100 |     100 | 11-65             
+  DisplayProducts.tsx  |    7.69 |        0 |       0 |    7.69 | 13-56             
+  Navigation.tsx       |     100 |       50 |     100 |     100 | 11-74             
  src/interfaces        |       0 |        0 |       0 |       0 |                   
   accounts.ts          |       0 |        0 |       0 |       0 |                   
   orders.ts            |       0 |        0 |       0 |       0 |                   
@@ -146,5 +154,5 @@ All files              |   42.85 |    43.75 |      45 |   42.85 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.429 s
+Time:        2.459 s
 Ran all test suites.
