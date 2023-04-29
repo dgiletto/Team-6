@@ -17,7 +17,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (175 ms)
+  ✕ renders the course name somewhere (162 ms)
 
   ● renders the course name somewhere
 
@@ -151,14 +151,14 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   39.28 |    44.44 |   45.45 |   39.28 |                   
- src                   |   14.28 |        0 |      50 |   14.28 |                   
+All files              |   42.85 |    44.44 |   45.45 |   42.85 |                   
+ src                   |   28.57 |        0 |      50 |   28.57 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
   Products.tsx         |       0 |        0 |       0 |       0 | 24-31             
-  images.tsx           |       0 |      100 |     100 |       0 | 14                
+  images.tsx           |     100 |      100 |     100 |     100 |                   
  src/components        |   81.81 |       50 |   81.81 |   81.81 |                   
   Cart.tsx             |       0 |        0 |       0 |       0 |                   
-  DisplayProducts.tsx  |       0 |      100 |       0 |       0 | 9-13              
+  DisplayProducts.tsx  |       0 |      100 |       0 |       0 | 10-14             
   Navigation.tsx       |     100 |       50 |     100 |     100 | 13-76             
  src/extras            |      50 |      100 |       0 |      50 |                   
   formatMoney.ts       |      50 |      100 |       0 |      50 | 6                 
@@ -178,5 +178,5 @@ All files              |   39.28 |    44.44 |   45.45 |   39.28 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.666 s
+Time:        2.504 s
 Ran all test suites.
