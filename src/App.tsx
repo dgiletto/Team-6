@@ -1,45 +1,42 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import Home from "./Home";
-import Processors from "./ProcessorPage";
-import GraphicsCards from "./GraphicsCardPage";
-import Rams from "./RamPage";
-import MBoards from "./MBoardPage";
-import Storage from "./StoragePage";
-import Cases from "./CasesPage";
-import Cart from "./CartPage";
+import { Navigate } from "./components/Navigation";
+import { Home } from "./pages/Home";
+import { Processors } from "./pages/ProcessorPage";
+import { GCards } from "./pages/GraphicsCardPage";
+import { Ram } from "./pages/RamPage";
+import { MBoards } from "./pages/MBoardPage";
+import { Storage } from "./pages/StoragePage";
+import { Cases } from "./pages/CasesPage";
+import { Cart } from "./pages/CartPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
 //import { Account } from "./interfaces/accounts";
+
+import { Container } from "react-bootstrap";
 
 function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
                 <div className="Website-name">Website Name</div>
-                <div className="Cart">{/*<Cart><Cart>*/}</div>
             </header>
-            <div>
-                <BrowserRouter>
-                    <Navigation />
+            <BrowserRouter>
+                <Navigate />
+                <Container className="mb-4">
                     <Routes>
-                        <Route path="/Home" Component={Home} />
-                        <Route path="/processors" Component={Processors} />
-
-                        <Route
-                            path="/graphics-cards"
-                            Component={GraphicsCards}
-                        />
-                        <Route path="/Rams" Component={Rams} />
-                        <Route path="/MBoards" Component={MBoards} />
-                        <Route path="/Storage" Component={Storage} />
-                        <Route path="Cases" Component={Cases} />
-                        <Route path="Cart" Component={Cart} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/processors" element={<Processors />} />
+                        <Route path="/gcards" element={<GCards />} />
+                        <Route path="/rams" element={<Ram />} />
+                        <Route path="/mboards" element={<MBoards />} />
+                        <Route path="/storage" element={<Storage />} />
+                        <Route path="/cases" element={<Cases />} />
+                        <Route path="/cart" element={<Cart />} />
                     </Routes>
-                </BrowserRouter>
-            </div>
+                </Container>
+            </BrowserRouter>
         </div>
     );
 }
