@@ -1,7 +1,7 @@
 import React from "react";
 
-export function GraphicsCards(): JSX.Element {
+export function GCards(): JSX.Element {
     return <div>This the page for Graphics Cards</div>;
 }
 
-export default GraphicsCards;
+export default GCards;
