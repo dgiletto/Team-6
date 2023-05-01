@@ -17,7 +17,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (207 ms)
+  ✕ renders the course name somewhere (167 ms)
 
   ● renders the course name somewhere
 
@@ -151,29 +151,22 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   11.76 |    21.62 |   19.23 |   11.96 |                   
+All files              |   42.85 |    44.44 |   45.45 |   42.85 |                   
  src                   |   28.57 |        0 |      50 |   28.57 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
   Products.tsx         |       0 |        0 |       0 |       0 | 24-31             
   images.tsx           |     100 |      100 |     100 |     100 |                   
- src/components        |   39.13 |    44.44 |      60 |   39.13 |                   
-  Cart.tsx             |       0 |        0 |       0 |       0 | 5-43              
-  CartLineItem.tsx     |       0 |      100 |       0 |       0 | 3-4               
-  DisplayProducts.tsx  |       0 |      100 |       0 |       0 | 15-19             
+ src/components        |   81.81 |       50 |   81.81 |   81.81 |                   
+  Cart.tsx             |       0 |        0 |       0 |       0 |                   
+  DisplayProducts.tsx  |       0 |      100 |       0 |       0 | 10-14             
   Navigation.tsx       |     100 |       50 |     100 |     100 | 13-76             
- src/context           |       0 |        0 |       0 |       0 |                   
-  cartProvider.tsx     |       0 |        0 |       0 |       0 | 14-148            
-  productsProvider.tsx |       0 |        0 |       0 |       0 | 13-149            
  src/extras            |      50 |      100 |       0 |      50 |                   
   formatMoney.ts       |      50 |      100 |       0 |      50 | 6                 
- src/hooks             |       0 |      100 |       0 |       0 |                   
-  useCart.tsx          |       0 |      100 |       0 |       0 | 5-6               
-  useProducts.tsx      |       0 |      100 |       0 |       0 | 5-6               
  src/interfaces        |       0 |        0 |       0 |       0 |                   
   accounts.ts          |       0 |        0 |       0 |       0 |                   
   orders.ts            |       0 |        0 |       0 |       0 |                   
- src/pages             |   10.52 |      100 |       0 |   10.52 |                   
-  CartPage.tsx         |   16.66 |      100 |       0 |   16.66 | 14-81             
+ src/pages             |       0 |      100 |       0 |       0 |                   
+  CartPage.tsx         |       0 |      100 |       0 |       0 | 4                 
   CasesPage.tsx        |       0 |      100 |       0 |       0 | 4                 
   GraphicsCardPage.tsx |       0 |      100 |       0 |       0 | 4                 
   Home.tsx             |       0 |      100 |       0 |       0 | 6                 
@@ -185,5 +178,5 @@ All files              |   11.76 |    21.62 |   19.23 |   11.96 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.65 s
+Time:        2.347 s
 Ran all test suites.
