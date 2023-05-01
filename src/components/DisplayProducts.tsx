@@ -1,14 +1,14 @@
 import { ProductCards } from "../Products";
-import React from "react";
+import React, { ReactElement } from "react";
 import { Row, Col } from "react-bootstrap";
 import products from "../data/products.json";
 import { images } from "../images";
-//import useCart from "../hooks/useCart";
-//import useProducts from "../hooks/useProducts";
+import useCart from "../hooks/useCart";
+import useProducts from "../hooks/useProducts";
 
 export function DisplayProducts(): JSX.Element {
-    // const { dispatch, REDUCER_ACTIONS, cart } = useCart();
-    // const { products } = useProducts();
+    const { dispatch, REDUCER_ACTIONS, cart } = useCart();
+    const { products } = useProducts();
 
     //const pageContent: ReactElement | ReactElement[] = <p>Loading</p>;
 
