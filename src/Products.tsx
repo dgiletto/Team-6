@@ -18,7 +18,7 @@ export function ProductCards({
     name,
     image,
     price,
-    //quantity,
+    quantity,
     stock,
     in_stock,
     type
