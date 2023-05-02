@@ -17,7 +17,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (190 ms)
+  ✕ renders the course name somewhere (172 ms)
 
   ● renders the course name somewhere
 
@@ -150,14 +150,15 @@ FAIL src/App.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   25.42 |    28.57 |   26.19 |   27.77 |                   
- src                      |   16.66 |        0 |   16.66 |   16.66 |                   
+All files                 |    23.8 |    28.57 |   24.44 |   25.86 |                   
+ src                      |    12.5 |        0 |   11.11 |    12.5 |                   
   App.tsx                 |     100 |      100 |     100 |     100 |                   
-  Products.tsx            |       0 |        0 |       0 |       0 | 26-81             
+  ModalView.tsx           |       0 |      100 |       0 |       0 | 7                 
+  Products.tsx            |       0 |        0 |       0 |       0 | 27-92             
   images.tsx              |     100 |      100 |     100 |     100 |                   
  src/components           |   81.81 |       50 |   81.81 |   81.81 |                   
   Cart.tsx                |       0 |        0 |       0 |       0 |                   
-  DisplayProducts.tsx     |       0 |      100 |       0 |       0 | 10-14             
+  DisplayProducts.tsx     |       0 |      100 |       0 |       0 | 8-12              
   Navigation.tsx          |     100 |       50 |     100 |     100 | 13-76             
  src/context              |   11.53 |        0 |    6.25 |   14.28 |                   
   shoppingCartContext.tsx |   11.53 |        0 |    6.25 |   14.28 | 22,29-66          
@@ -179,5 +180,5 @@ All files                 |   25.42 |    28.57 |   26.19 |   27.77 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.309 s
+Time:        3.227 s
 Ran all test suites.
