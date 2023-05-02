@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { formatCards } from "./extras/formatMoney";
+import { useShoppingCart } from "./context/shoppingCartContext";
 
 type Product = {
     name: string;
@@ -21,7 +22,9 @@ export function ProductCards({
     in_stock,
     type
 }: Product) {
-    const amount = 0;
+    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
+        useShoppingCart();
+    const amount = getItemQty(name);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     stock = 10;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -46,7 +49,12 @@ export function ProductCards({
                 </Card.Title>
                 <div className="mt-auto">
                     {amount < 1 ? (
-                        <Button className="w-100">Add to Cart</Button>
+                        <Button
+                            className="w-100"
+                            onClick={() => increaseCartQty(name)}
+                        >
+                            Add to Cart
+                        </Button>
                     ) : (
                         <div
                             className="d-flex align-items-center flex-column"
@@ -56,14 +64,22 @@ export function ProductCards({
                                 className="d-flex align-items-center justify-content-center"
                                 style={{ gap: ".5rem" }}
                             >
-                                <Button>-</Button>
+                                <Button onClick={() => decreaseCartQty(name)}>
+                                    -
+                                </Button>
                                 <div>
-                                    added{" "}
-                                    <span className="fs-3">{quantity}</span>
+                                    added <span className="fs-3">{amount}</span>{" "}
+                                    in cart
                                 </div>
-                                <Button>+</Button>
+                                <Button onClick={() => increaseCartQty(name)}>
+                                    +
+                                </Button>
                             </div>
-                            <Button variant="danger" size="sm">
+                            <Button
+                                variant="danger"
+                                size="sm"
+                                onClick={() => removeFromCart(name)}
+                            >
                                 Remove
                             </Button>
                         </div>
