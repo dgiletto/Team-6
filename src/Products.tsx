@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { formatCards } from "./extras/formatMoney";
+import { ModalView } from "./ModalView";
 
 type Product = {
     name: string;
@@ -28,6 +29,7 @@ export function ProductCards({
     in_stock = true;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     type = "item";
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <Card className="h-100">
             <Card.Img
@@ -36,6 +38,15 @@ export function ProductCards({
                 src={image}
                 alt="Product img"
                 style={{ objectFit: "cover" }}
+                onClick={() => setModalShow(true)}
+            />
+            <ModalView
+                name={name}
+                image={image}
+                price={price}
+                quantity={quantity}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
             />
             <Card.Body className="d-flex flex-column">
                 <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
