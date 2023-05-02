@@ -15,6 +15,7 @@ import { Cart } from "./pages/CartPage";
 //import { Account } from "./interfaces/accounts";
 
 import { Container } from "react-bootstrap";
+import { ShoppingCartProvider } from "./context/shoppingCartContext";
 
 function App(): JSX.Element {
     return (
@@ -22,21 +23,26 @@ function App(): JSX.Element {
             <header className="App-header">
                 <div className="Website-name">Website Name</div>
             </header>
-            <BrowserRouter>
-                <Navigate />
-                <Container className="mb-4">
-                    <Routes>
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/processors" element={<Processors />} />
-                        <Route path="/gcards" element={<GCards />} />
-                        <Route path="/rams" element={<Ram />} />
-                        <Route path="/mboards" element={<MBoards />} />
-                        <Route path="/storage" element={<Storage />} />
-                        <Route path="/cases" element={<Cases />} />
-                        <Route path="/cart" element={<Cart />} />
-                    </Routes>
-                </Container>
-            </BrowserRouter>
+            <ShoppingCartProvider>
+                <BrowserRouter>
+                    <Navigate />
+                    <Container className="mb-4">
+                        <Routes>
+                            <Route path="/home" element={<Home />} />
+                            <Route
+                                path="/processors"
+                                element={<Processors />}
+                            />
+                            <Route path="/gcards" element={<GCards />} />
+                            <Route path="/rams" element={<Ram />} />
+                            <Route path="/mboards" element={<MBoards />} />
+                            <Route path="/storage" element={<Storage />} />
+                            <Route path="/cases" element={<Cases />} />
+                            <Route path="/cart" element={<Cart />} />
+                        </Routes>
+                    </Container>
+                </BrowserRouter>
+            </ShoppingCartProvider>
         </div>
     );
 }
