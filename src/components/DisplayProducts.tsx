@@ -1,8 +1,6 @@
 import { ProductCards } from "../Products";
 import React from "react";
-// import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-// import { Button, Row, Col } from "react-bootstrap";
 import products from "../data/products.json";
 import { images } from "../images";
 
