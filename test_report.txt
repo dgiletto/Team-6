@@ -9,15 +9,15 @@ Browserslist: caniuse-lite is outdated. Please run:
     No routes matched location "/"
 
       at Object.warning [as UNSAFE_warning] (node_modules/@remix-run/router/history.ts:487:49)
-      at useRoutes (node_modules/react-router/lib/hooks.tsx:388:5)
-      at Routes (node_modules/react-router/lib/components.tsx:404:10)
+      at useRoutesImpl (node_modules/react-router/lib/hooks.tsx:419:5)
+      at useRoutes (node_modules/react-router/lib/hooks.tsx:330:10)
+      at Routes (node_modules/react-router/lib/components.tsx:403:10)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
-      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (162 ms)
+  ✕ renders the course name somewhere (190 ms)
 
   ● renders the course name somewhere
 
@@ -147,35 +147,37 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   42.85 |    44.44 |   45.45 |   42.85 |                   
- src                   |   28.57 |        0 |      50 |   28.57 |                   
-  App.tsx              |     100 |      100 |     100 |     100 |                   
-  Products.tsx         |       0 |        0 |       0 |       0 | 24-31             
-  images.tsx           |     100 |      100 |     100 |     100 |                   
- src/components        |   81.81 |       50 |   81.81 |   81.81 |                   
-  Cart.tsx             |       0 |        0 |       0 |       0 |                   
-  DisplayProducts.tsx  |       0 |      100 |       0 |       0 | 10-14             
-  Navigation.tsx       |     100 |       50 |     100 |     100 | 13-76             
- src/extras            |      50 |      100 |       0 |      50 |                   
-  formatMoney.ts       |      50 |      100 |       0 |      50 | 6                 
- src/interfaces        |       0 |        0 |       0 |       0 |                   
-  accounts.ts          |       0 |        0 |       0 |       0 |                   
-  orders.ts            |       0 |        0 |       0 |       0 |                   
- src/pages             |       0 |      100 |       0 |       0 |                   
-  CartPage.tsx         |       0 |      100 |       0 |       0 | 4                 
-  CasesPage.tsx        |       0 |      100 |       0 |       0 | 4                 
-  GraphicsCardPage.tsx |       0 |      100 |       0 |       0 | 4                 
-  Home.tsx             |       0 |      100 |       0 |       0 | 6                 
-  MBoardPage.tsx       |       0 |      100 |       0 |       0 | 4                 
-  ProcessorPage.tsx    |       0 |      100 |       0 |       0 | 4                 
-  RamPage.tsx          |       0 |      100 |       0 |       0 | 4                 
-  StoragePage.tsx      |       0 |      100 |       0 |       0 | 4                 
------------------------|---------|----------|---------|---------|-------------------
+--------------------------|---------|----------|---------|---------|-------------------
+File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------------|---------|----------|---------|---------|-------------------
+All files                 |   25.42 |    28.57 |   26.19 |   27.77 |                   
+ src                      |   16.66 |        0 |   16.66 |   16.66 |                   
+  App.tsx                 |     100 |      100 |     100 |     100 |                   
+  Products.tsx            |       0 |        0 |       0 |       0 | 26-81             
+  images.tsx              |     100 |      100 |     100 |     100 |                   
+ src/components           |   81.81 |       50 |   81.81 |   81.81 |                   
+  Cart.tsx                |       0 |        0 |       0 |       0 |                   
+  DisplayProducts.tsx     |       0 |      100 |       0 |       0 | 10-14             
+  Navigation.tsx          |     100 |       50 |     100 |     100 | 13-76             
+ src/context              |   11.53 |        0 |    6.25 |   14.28 |                   
+  shoppingCartContext.tsx |   11.53 |        0 |    6.25 |   14.28 | 22,29-66          
+ src/extras               |      50 |      100 |       0 |      50 |                   
+  formatMoney.ts          |      50 |      100 |       0 |      50 | 6                 
+ src/interfaces           |       0 |        0 |       0 |       0 |                   
+  accounts.ts             |       0 |        0 |       0 |       0 |                   
+  orders.ts               |       0 |        0 |       0 |       0 |                   
+ src/pages                |       0 |      100 |       0 |       0 |                   
+  CartPage.tsx            |       0 |      100 |       0 |       0 | 4                 
+  CasesPage.tsx           |       0 |      100 |       0 |       0 | 4                 
+  GraphicsCardPage.tsx    |       0 |      100 |       0 |       0 | 4                 
+  Home.tsx                |       0 |      100 |       0 |       0 | 6                 
+  MBoardPage.tsx          |       0 |      100 |       0 |       0 | 4                 
+  ProcessorPage.tsx       |       0 |      100 |       0 |       0 | 4                 
+  RamPage.tsx             |       0 |      100 |       0 |       0 | 4                 
+  StoragePage.tsx         |       0 |      100 |       0 |       0 | 4                 
+--------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.544 s
+Time:        3.309 s
 Ran all test suites.
