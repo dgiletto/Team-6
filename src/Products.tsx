@@ -68,8 +68,8 @@ export function ProductCards({
                                     -
                                 </Button>
                                 <div>
-                                    added <span className="fs-3">{amount}</span>{" "}
-                                    in cart
+                                    <span className="fs-3">{amount}</span> in
+                                    cart
                                 </div>
                                 <Button onClick={() => increaseCartQty(name)}>
                                     +
