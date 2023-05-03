@@ -1,7 +1,8 @@
 import React from "react";
+import { DisplayProductsType } from "../components/DisplayProductType";
 
 export function Ram(): JSX.Element {
-    return <div>This the page for Rams</div>;
+    return <div>{DisplayProductsType("RAM")}</div>;
 }
 
 export default Ram;

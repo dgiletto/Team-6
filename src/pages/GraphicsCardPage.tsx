@@ -1,7 +1,8 @@
 import React from "react";
+import { DisplayProductsType } from "../components/DisplayProductType";
 
 export function GCards(): JSX.Element {
-    return <div>This the page for Graphics Cards</div>;
+    return <div>{DisplayProductsType("GPU")}</div>;
 }
 
 export default GCards;
