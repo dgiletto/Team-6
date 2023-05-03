@@ -106,7 +106,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (189 ms)
+  ✕ renders the course name somewhere (202 ms)
 
   ● renders the course name somewhere
 
@@ -160,14 +160,15 @@ FAIL src/App.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |    32.6 |    26.31 |   26.78 |   36.14 |                   
+All files                 |   31.57 |    26.31 |   25.42 |   34.88 |                   
  src                      |    12.5 |        0 |   11.11 |    12.5 |                   
   App.tsx                 |     100 |      100 |     100 |     100 |                   
   ModalView.tsx           |       0 |      100 |       0 |       0 | 7                 
   Products.tsx            |       0 |        0 |       0 |       0 | 27-92             
   images.tsx              |     100 |      100 |     100 |     100 |                   
- src/components           |   45.83 |    36.36 |   52.94 |   47.82 |                   
+ src/components           |   40.74 |    36.36 |      45 |    42.3 |                   
   Cart.tsx                |   33.33 |        0 |      25 |   33.33 | 22-32             
+  DisplayProductType.tsx  |       0 |      100 |       0 |       0 | 11-17             
   DisplayProducts.tsx     |       0 |      100 |       0 |       0 | 8-12              
   Navigation.tsx          |     100 |       50 |     100 |     100 | 16-76             
   cartItem.tsx            |       0 |        0 |       0 |       0 | 13-43             
@@ -181,16 +182,16 @@ All files                 |    32.6 |    26.31 |   26.78 |   36.14 |
   accounts.ts             |       0 |        0 |       0 |       0 |                   
   orders.ts               |       0 |        0 |       0 |       0 |                   
  src/pages                |       0 |      100 |       0 |       0 |                   
-  CasesPage.tsx           |       0 |      100 |       0 |       0 | 4                 
-  GraphicsCardPage.tsx    |       0 |      100 |       0 |       0 | 4                 
+  CasesPage.tsx           |       0 |      100 |       0 |       0 | 5                 
+  GraphicsCardPage.tsx    |       0 |      100 |       0 |       0 | 5                 
   Home.tsx                |       0 |      100 |       0 |       0 | 6                 
-  MBoardPage.tsx          |       0 |      100 |       0 |       0 | 4                 
-  ProcessorPage.tsx       |       0 |      100 |       0 |       0 | 4                 
-  RamPage.tsx             |       0 |      100 |       0 |       0 | 4                 
-  StoragePage.tsx         |       0 |      100 |       0 |       0 | 4                 
+  MBoardPage.tsx          |       0 |      100 |       0 |       0 | 5                 
+  ProcessorPage.tsx       |       0 |      100 |       0 |       0 | 5                 
+  RamPage.tsx             |       0 |      100 |       0 |       0 | 5                 
+  StoragePage.tsx         |       0 |      100 |       0 |       0 | 5                 
 --------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.77 s
+Time:        2.86 s
 Ran all test suites.
