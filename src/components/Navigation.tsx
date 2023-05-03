@@ -93,6 +93,7 @@ export function Navigate() {
                     <div
                         className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
                         style={{
+                            backgroundColor: "cc5237",
                             color: "white",
                             width: "1.5rem",
                             height: "1.5rem",
