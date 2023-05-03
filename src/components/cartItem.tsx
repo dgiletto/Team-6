@@ -28,12 +28,12 @@ export function CartItem({ name, quantity }: cartItemProps) {
             />
             <div className="me-auto">
                 <div>
-                    (item.name)
+                    {item.name}
                     {quantity > 1 && (
                         <span className="text-muted">{quantity}x</span>
                     )}
                 </div>
-                <div className="text-muted" style={{ fontSize: "3rem" }}>
+                <div className="text-muted" style={{ fontSize: "1rem" }}>
                     {formatCards(item.price)}
                 </div>
                 <div>{formatCards(item.price * quantity)}</div>
