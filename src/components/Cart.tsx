@@ -21,7 +21,6 @@ export function Cart({ isOpen }: CartProps) {
                     {cartItems.map((item) => (
                         <CartItem key={item.name} {...item} />
                     ))}
-                    ;
                     <div className="ms-auto fw-bold fs-5">
                         Total{" "}
                         {formatCards(
