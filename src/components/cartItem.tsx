@@ -20,7 +20,7 @@ export function CartItem({ name, quantity }: cartItemProps) {
         <Stack
             direction="horizontal"
             gap={2}
-            className="d-flexalign-items-center"
+            className="d-flex align-items-center"
         >
             <img
                 src={item.image}
@@ -33,7 +33,7 @@ export function CartItem({ name, quantity }: cartItemProps) {
                         <span className="text-muted">{quantity}x</span>
                     )}
                 </div>
-                <div className="text-muted" style={{ fontSize: "75rem" }}>
+                <div className="text-muted" style={{ fontSize: "3rem" }}>
                     {formatCards(item.price)}
                 </div>
                 <div>{formatCards(item.price * quantity)}</div>
