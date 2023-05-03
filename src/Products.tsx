@@ -62,7 +62,7 @@ export function ProductCards({
                     {amount < 1 ? (
                         <Button
                             className="w-100"
-                            style={{ color: "#326bdc" }}
+                            style={{ backgroundColor: "#326bdc" }}
                             onClick={() => increaseCartQty(name)}
                         >
                             Add to Cart
@@ -77,7 +77,7 @@ export function ProductCards({
                                 style={{ gap: ".5rem" }}
                             >
                                 <Button
-                                    style={{ color: "#326bdc" }}
+                                    style={{ backgroundColor: "#326bdc" }}
                                     onClick={() => decreaseCartQty(name)}
                                 >
                                     -
@@ -87,7 +87,7 @@ export function ProductCards({
                                     cart
                                 </div>
                                 <Button
-                                    style={{ color: "#326bdc" }}
+                                    style={{ backgroundColor: "#326bdc" }}
                                     onClick={() => increaseCartQty(name)}
                                 >
                                     +
@@ -96,6 +96,7 @@ export function ProductCards({
                             <Button
                                 variant="danger"
                                 size="sm"
+                                style={{ backgroundColor: "#cc5237" }}
                                 onClick={() => removeFromCart(name)}
                             >
                                 Remove
