@@ -30,7 +30,7 @@ export function CartItem({ name, quantity }: cartItemProps) {
                 <div>
                     {item.name}
                     {quantity > 1 && (
-                        <span className="text-muted">{quantity}x</span>
+                        <span className="text-muted"> x{quantity}</span>
                     )}
                 </div>
                 <div className="text-muted" style={{ fontSize: "1rem" }}>

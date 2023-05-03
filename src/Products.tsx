@@ -62,6 +62,7 @@ export function ProductCards({
                     {amount < 1 ? (
                         <Button
                             className="w-100"
+                            style={{ color: "#326bdc" }}
                             onClick={() => increaseCartQty(name)}
                         >
                             Add to Cart
@@ -75,14 +76,20 @@ export function ProductCards({
                                 className="d-flex align-items-center justify-content-center"
                                 style={{ gap: ".5rem" }}
                             >
-                                <Button onClick={() => decreaseCartQty(name)}>
+                                <Button
+                                    style={{ color: "#326bdc" }}
+                                    onClick={() => decreaseCartQty(name)}
+                                >
                                     -
                                 </Button>
                                 <div>
                                     <span className="fs-3">{amount}</span> in
                                     cart
                                 </div>
-                                <Button onClick={() => increaseCartQty(name)}>
+                                <Button
+                                    style={{ color: "#326bdc" }}
+                                    onClick={() => increaseCartQty(name)}
+                                >
                                     +
                                 </Button>
                             </div>
