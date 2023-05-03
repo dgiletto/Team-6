@@ -106,7 +106,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (169 ms)
+  ✕ renders the course name somewhere (222 ms)
 
   ● renders the course name somewhere
 
@@ -160,17 +160,17 @@ FAIL src/App.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   31.57 |    26.31 |   25.42 |   34.88 |                   
+All files                 |   31.57 |       25 |   25.42 |   34.88 |                   
  src                      |    12.5 |        0 |   11.11 |    12.5 |                   
   App.tsx                 |     100 |      100 |     100 |     100 |                   
   ModalView.tsx           |       0 |      100 |       0 |       0 | 7                 
   Products.tsx            |       0 |        0 |       0 |       0 | 27-92             
   images.tsx              |     100 |      100 |     100 |     100 |                   
- src/components           |   40.74 |    36.36 |      45 |    42.3 |                   
+ src/components           |   40.74 |       35 |      45 |    42.3 |                   
   Cart.tsx                |   33.33 |        0 |      25 |   33.33 | 22-32             
   DisplayProductType.tsx  |       0 |      100 |       0 |       0 | 11-17             
   DisplayProducts.tsx     |       0 |      100 |       0 |       0 | 8-12              
-  Navigation.tsx          |     100 |       50 |     100 |     100 | 16-76             
+  Navigation.tsx          |     100 |       50 |     100 |     100 | 16-70             
   cartItem.tsx            |       0 |        0 |       0 |       0 | 13-43             
  src/context              |   24.24 |        0 |   10.52 |   30.76 |                   
   shoppingCartContext.tsx |   24.24 |        0 |   10.52 |   30.76 | 39,47-84          
@@ -193,5 +193,5 @@ All files                 |   31.57 |    26.31 |   25.42 |   34.88 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.725 s
+Time:        3.654 s
 Ran all test suites.
