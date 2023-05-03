@@ -1,7 +1,8 @@
 import React from "react";
+import { DisplayProductsType } from "../components/DisplayProductType";
 
 export function Processors(): JSX.Element {
-    return <div>This the page for CPUs</div>;
+    return <div>{DisplayProductsType("CPU")}</div>;
 }
 
 export default Processors;
