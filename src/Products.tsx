@@ -4,7 +4,7 @@ import { formatCards } from "./extras/formatMoney";
 import { ModalView } from "./ModalView";
 import { useShoppingCart } from "./context/shoppingCartContext";
 
-export type Product = {
+type Product = {
     name: string;
     image: string;
     price: number;
