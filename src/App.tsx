@@ -9,6 +9,7 @@ import { Ram } from "./pages/RamPage";
 import { MBoards } from "./pages/MBoardPage";
 import { Storage } from "./pages/StoragePage";
 import { Cases } from "./pages/CasesPage";
+import { SignIn } from "./pages/SignInPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
 //import { Account } from "./interfaces/accounts";
@@ -37,6 +38,7 @@ function App(): JSX.Element {
                             <Route path="/mboards" element={<MBoards />} />
                             <Route path="/storage" element={<Storage />} />
                             <Route path="/cases" element={<Cases />} />
+                            <Route path="/login" element={<SignIn />} />
                         </Routes>
                     </Container>
                 </BrowserRouter>
