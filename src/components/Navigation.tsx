@@ -15,7 +15,7 @@ export function Navigate() {
                     style={({ isActive }) =>
                         isActive ? { color: "#326bdc" } : { color: "#829fda" }
                     }
-                    to="/home"
+                    to="/homepage"
                 >
                     Home
                 </NavLink>
@@ -78,7 +78,16 @@ export function Navigate() {
                     style={({ isActive }) =>
                         isActive ? { color: "#326bdc" } : { color: "#829fda" }
                     }
-                    to="/login"
+                    to="/signup"
+                >
+                    Sign Up
+                </NavLink>
+                <NavLink
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/signin"
                 >
                     Sign In
                 </NavLink>

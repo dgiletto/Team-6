@@ -29,7 +29,7 @@ function App(): JSX.Element {
                     <Navigate />
                     <Container className="mb-4">
                         <Routes>
-                            <Route path="/home" element={<Home />} />
+                            <Route path="/homepage" element={<Home />} />
                             <Route
                                 path="/processors"
                                 element={<Processors />}
@@ -39,7 +39,8 @@ function App(): JSX.Element {
                             <Route path="/mboards" element={<MBoards />} />
                             <Route path="/storage" element={<Storage />} />
                             <Route path="/cases" element={<Cases />} />
-                            <Route path="/login" element={<SignIn />} />
+                            <Route path="/signup" element={<SignupPage />} />
+                            <Route path="/signin" element={<SigninPage />} />
                         </Routes>
                     </Container>
                 </BrowserRouter>
