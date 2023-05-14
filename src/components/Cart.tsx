@@ -28,7 +28,7 @@ export function Cart({ isOpen }: CartProps) {
             return total + (item?.price || 0) * cartItem.quantity;
         }, 0) !== 0;
     return (
-        <Offcanvas show={isOpen} onHide={closeCart} placement="end">
+        <Offcanvas show={isOpen} onHide={closeCart} placement="end" role="cart">
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Cart</Offcanvas.Title>
             </Offcanvas.Header>
@@ -113,7 +113,7 @@ export function Cart({ isOpen }: CartProps) {
                                 Cancel
                             </Button>
                             <Button variant="primary" onClick={handleClose}>
-                                Sumbit
+                                Submit
                             </Button>
                         </Modal.Footer>
                     </Modal>
