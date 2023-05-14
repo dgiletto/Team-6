@@ -73,38 +73,52 @@ export function Cart({ isOpen }: CartProps) {
                             )}
                             <Form>
                                 <Form.Group id="cardholder name">
-                                    <Form.Label>Cardholder Name</Form.Label>
+                                    <Form.Label htmlFor="cardholder">
+                                        Cardholder Name
+                                    </Form.Label>
                                     <Form.Control
                                         type="cardholder name"
                                         placeholder="John Doe"
+                                        id="cardholder"
                                     />
                                 </Form.Group>
                                 <Form.Group id="card number">
-                                    <Form.Label>Card Number</Form.Label>
+                                    <Form.Label htmlFor="cardnumb">
+                                        Card Number
+                                    </Form.Label>
                                     <Form.Control
                                         type="card number"
                                         placeholder="1234 5678 9101 1121"
+                                        id="cardnumb"
                                     />
                                 </Form.Group>
                                 <Row>
                                     <Form.Group as={Col} id="cvv">
-                                        <Form.Label>CVV</Form.Label>
+                                        <Form.Label htmlFor="CVV">
+                                            CVV
+                                        </Form.Label>
                                         <Form.Control
                                             type="cvv"
                                             placeholder="123"
+                                            id="CVV"
                                         />
                                     </Form.Group>
                                     <Form.Group as={Col} id="expiration">
-                                        <Form.Label>Expiration Date</Form.Label>
+                                        <Form.Label htmlFor="Expiration">
+                                            Expiration Date
+                                        </Form.Label>
                                         <Form.Control
                                             type="expiration"
                                             placeholder="01/24"
+                                            id="Expiration"
                                         />
                                     </Form.Group>
                                 </Row>
                                 <Form.Group id="zip code">
-                                    <Form.Label>Zip Code</Form.Label>
-                                    <Form.Control type="zip code" />
+                                    <Form.Label htmlFor="Zip">
+                                        Zip Code
+                                    </Form.Label>
+                                    <Form.Control type="zip code" id="Zip" />
                                 </Form.Group>
                             </Form>
                         </Modal.Body>
