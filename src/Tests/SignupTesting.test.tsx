@@ -1,8 +1,6 @@
 import React from "react";
-import { fireEvent, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { ProductCards } from "../Products";
-import { BrowserRouter, Route, Routes, MemoryRouter } from "react-router-dom";
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import Signup from "../components/Signup";
 import Signin from "../firebase-setup/Signin";
 
