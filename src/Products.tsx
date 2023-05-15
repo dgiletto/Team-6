@@ -92,7 +92,7 @@ export function ProductCards({
                                 <Button
                                     style={{ backgroundColor: "#829fda" }}
                                     onClick={() => {
-                                        increaseItemQty(name, amount);
+                                        increaseItemQty(name, 1);
                                         decreaseCartQty(name);
                                     }}
                                 >
@@ -116,7 +116,10 @@ export function ProductCards({
                                 variant="danger"
                                 size="sm"
                                 style={{ backgroundColor: "#cc5237" }}
-                                onClick={() => removeFromCart(name)}
+                                onClick={() => {
+                                    increaseItemQty(name, quantity);
+                                    removeFromCart(name);
+                                }}
                             >
                                 Remove
                             </Button>

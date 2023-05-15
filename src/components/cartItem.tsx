@@ -71,16 +71,16 @@ export function CartItem({ name, quantity }: cartItemProps) {
                     >
                         +
                     </Button>
+                    <Button
+                        variant="outline-danger"
+                        onClick={() => {
+                            increaseItemQty(name, quantity);
+                            removeFromCart(item.name);
+                        }}
+                    >
+                        &times;
+                    </Button>
                 </div>
-                <Button
-                    variant="outline-danger"
-                    onClick={() => {
-                        increaseItemQty(name, quantity);
-                        removeFromCart(item.name);
-                    }}
-                >
-                    &times;
-                </Button>
             </div>
         </Stack>
     );
