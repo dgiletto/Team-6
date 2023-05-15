@@ -1,12 +1,13 @@
 [
     {
-        "name": "Intel I9-13900K",
+        "name": "Intel i9-13900K",
         "image": "./images/i9-13900k-resize.png",
         "price": 580,
         "quantity": 0,
         "stock": 100,
         "in_stock": true,
-        "type": "CPU"
+        "type": "CPU",
+        "description": "Cores: 24 cores (8 P-cores + 16 E-cores), 32 Threads | Base Clock Speed: 3.00GHz (P-core), 2.20GHz (E-core) | Boost Clock Speed: 5.40GHz (P-core), 4.30GHz (E-core)"
     },
     {
         "name": "Ryzen 7 7700X",
@@ -15,7 +16,8 @@
         "quantity": 0,
         "stock": 200,
         "in_stock": true,
-        "type": "CPU"
+        "type": "CPU",
+        "description": "Cores: 8 cores, 16 threads | Base Clock Speed: 4.50GHz | Boost Clock Speed: 5.4GHz0"
     },
     {
         "name": "MSI RTX 3060Ti",
@@ -24,7 +26,8 @@
         "quantity": 0,
         "stock": 150,
         "in_stock": true,
-        "type": "GPU"
+        "type": "GPU",
+        "description": "VRAM: 8GB | Clock Speed: 1695MHz"
     },
     {
         "name": "Powercolor Radeon 6600",
@@ -33,7 +36,8 @@
         "quantity": 0,
         "stock": 300,
         "in_stock": true,
-        "type": "GPU"
+        "type": "GPU",
+        "description": "VRAM: 8GB | Clock Speed: 2044MHz"
     },
     {
         "name": "Corsair Vengeance 8GB RAM",
@@ -42,7 +46,8 @@
         "quantity": 0,
         "stock": 350,
         "in_stock": true,
-        "type": "RAM"
+        "type": "RAM",
+        "description": "Memory: DDR4 8GB | Clock Speed: 2400MHz C16"
     },
     {
         "name": "Corsair Vengeance 16GB ProRGB RAM",
@@ -51,25 +56,28 @@
         "quantity": 0,
         "stock": 200,
         "in_stock": true,
-        "type": "RAM"
+        "type": "RAM",
+        "description": "Memory: DDR4 8GB x2 | Clock Speed: 3200MHz C16"
     },
     {
-        "name": "Dell Poweredge r720",
-        "image": "./images/MBD-Dell_PE_R720V1-resize.jpeg",
+        "name": "MSI MPG Z490",
+        "image": "./images/MSI-MPG-Z490-resize.jpg",
         "price": 200,
+        "quantity": 130,
+        "stock": 150,
+        "in_stock": true,
+        "type": "MB",
+        "description": "Form Factor: ATX | Chipset: LGA 1200"
+    },
+    {
+        "name": "ASUS ROG STRIX Z790-H",
+        "image": "./images/ASUS ROG STRIX Z790-H-resize.jpg",
+        "price": 300,
         "quantity": 0,
         "stock": 150,
         "in_stock": true,
-        "type": "MB"
-    },
-    {
-        "name": "Supermicro X11SAE",
-        "image": "./images/MBD-X11SAE-resize.jpeg",
-        "price": 350,
-        "quantity": 0,
-        "stock": 100,
-        "in_stock": true,
-        "type": "MB"
+        "type": "MB",
+        "description": "Form Factor: ATX | Chipset: LGA 1700"
     },
     {
         "name": "Samsung 980 PRO SSD",
@@ -78,7 +86,8 @@
         "quantity": 0,
         "stock": 220,
         "in_stock": true,
-        "type": "Storage"
+        "type": "Storage",
+        "description": "Storage: M.2 NVMe™ SSD 1TB | Data Transfer Rate:3500MB/s"
     },
     {
         "name": "Seagate BarraCuda 8TB HDD",
@@ -87,7 +96,8 @@
         "quantity": 0,
         "stock": 100,
         "in_stock": true,
-        "type": "Storage"
+        "type": "Storage",
+        "description": "Storage: Sata HDD 8TB | Data Transfer Rate:6Gb/s"
     },
     {
         "name": "Corsair 4000D",
@@ -96,7 +106,8 @@
         "quantity": 0,
         "stock": 400,
         "in_stock": true,
-        "type": "Case"
+        "type": "Case",
+        "description": "Form Factor: Mid-Tower"
     },
     {
         "name": "Thermaltake Versa H18",
@@ -105,6 +116,7 @@
         "quantity": 0,
         "stock": 500,
         "in_stock": true,
-        "type": "Case"
+        "type": "Case",
+        "description": "Form Factor: Micro ATX"
     }
 ]

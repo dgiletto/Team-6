@@ -1,9 +1,12 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal, { ModalProps } from "react-bootstrap/Modal";
-//import { Row, Col, Container } from "react-bootstrap";
+import { useShoppingCart } from "./context/shoppingCartContext";
 
 export function ModalView(props: ModalProps) {
+    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
+        useShoppingCart();
+    const amount = getItemQty(props.name);
     return (
         <Modal
             {...props}
@@ -28,13 +31,35 @@ export function ModalView(props: ModalProps) {
                     <img src={props.image}></img>
                     <div>
                         <h4>Price: ${props.price}</h4>
-                        <h4>Quantity: {props.quantity}</h4>
+                        <h6>{props.description}</h6>
                     </div>
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <Button>Add to Cart</Button>
-                <Button onClick={props.onHide}>Cancel</Button>
+                <div
+                    className="d-flex align-items-center justify-content-left"
+                    style={{ gap: ".5rem" }}
+                >
+                    <Button
+                        onClick={() =>
+                            amount > 1
+                                ? decreaseCartQty(props.name)
+                                : removeFromCart(props.name)
+                        }
+                    >
+                        -
+                    </Button>
+                    {amount} in cart
+                    <Button onClick={() => increaseCartQty(props.name)}>
+                        +
+                    </Button>
+                </div>
+                <Button
+                    variant="outline-danger"
+                    onClick={() => removeFromCart(props.name)}
+                >
+                    Remove
+                </Button>
             </Modal.Footer>
         </Modal>
     );

@@ -12,6 +12,7 @@ type Product = {
     stock: number;
     in_stock: boolean;
     type: string;
+    description: string;
 };
 
 export function ProductCards({
@@ -21,7 +22,8 @@ export function ProductCards({
     quantity,
     stock,
     in_stock,
-    type
+    type,
+    description
 }: Product) {
     const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
         useShoppingCart();
@@ -48,6 +50,7 @@ export function ProductCards({
                 image={image}
                 price={price}
                 quantity={quantity}
+                description={description}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
             />
