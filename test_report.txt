@@ -479,11 +479,11 @@ PASS src/Tests/SignupTesting.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   28.84 |    14.06 |   20.45 |   29.86 |                   
- src                      |   46.66 |    16.66 |   30.76 |   46.66 |                   
+All files                 |   29.29 |    14.06 |   20.45 |   30.34 |                   
+ src                      |   48.38 |    16.66 |   30.76 |   48.38 |                   
   App.tsx                 |       0 |        0 |       0 |       0 | 25-40             
-  ModalView.tsx           |      50 |        0 |      25 |      50 | 45-59             
-  Products.tsx            |   66.66 |       50 |   42.85 |   66.66 | 54-96             
+  ModalView.tsx           |      50 |        0 |      25 |      50 | 47-61             
+  Products.tsx            |   68.75 |       50 |   42.85 |   68.75 | 54-96             
   firebase.ts             |       0 |      100 |     100 |       0 | 4-13              
   images.tsx              |     100 |      100 |     100 |     100 |                   
  src/components           |   44.26 |    21.05 |   31.57 |   43.85 |                   
@@ -493,7 +493,7 @@ All files                 |   28.84 |    14.06 |   20.45 |   29.86 |
   DisplayProducts.tsx     |     100 |      100 |     100 |     100 |                   
   EditStock.tsx           |       0 |      100 |       0 |       0 | 7-21              
   Navigation.tsx          |       0 |        0 |       0 |       0 | 8-97              
-  cartItem.tsx            |   56.25 |    16.66 |      40 |   53.33 | 26-79             
+  cartItem.tsx            |   56.25 |    16.66 |      40 |   53.33 | 26-78             
  src/context              |    4.65 |        0 |    4.34 |    5.55 |                   
   shoppingCartContext.tsx |    4.65 |        0 |    4.34 |    5.55 | 35-113            
  src/extras               |     100 |      100 |     100 |     100 |                   
@@ -519,5 +519,5 @@ All files                 |   28.84 |    14.06 |   20.45 |   29.86 |
 Test Suites: 3 failed, 1 passed, 4 total
 Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        6.589 s
+Time:        7.023 s
 Ran all test suites.
