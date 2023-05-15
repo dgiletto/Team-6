@@ -4,14 +4,8 @@ import Modal, { ModalProps } from "react-bootstrap/Modal";
 import { useShoppingCart } from "./context/shoppingCartContext";
 
 export function ModalView(props: ModalProps) {
-    const {
-        getItemQty,
-        increaseCartQty,
-        decreaseCartQty,
-        removeFromCart,
-        increaseItemQty,
-        decreaseItemQty
-    } = useShoppingCart();
+    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
+        useShoppingCart();
     const amount = getItemQty(props.name);
 
     return (
@@ -43,6 +37,8 @@ export function ModalView(props: ModalProps) {
                 </div>
             </Modal.Body>
             <Modal.Footer>
+                <Button> Add To Cart</Button>
+                <Button onClick={props.onHide}>Cancel</Button>
                 <div
                     className="d-flex align-items-center justify-content-left"
                     style={{ gap: ".5rem" }}

@@ -29,9 +29,10 @@ export default function Signin() {
                 <h2 className="text-center mb-4">Sign In</h2>
                 <Form onSubmit={signIn}>
                     <Form.Group id="email">
-                        <Form.Label>Email</Form.Label>
+                        <Form.Label htmlFor="emailing">Email</Form.Label>
                         <Form.Control
                             required
+                            id="emailing"
                             type="email"
                             placeholder="Email"
                             value={email}
@@ -41,9 +42,10 @@ export default function Signin() {
                         />
                     </Form.Group>
                     <Form.Group id="passwd">
-                        <Form.Label>Password</Form.Label>
+                        <Form.Label htmlFor="pswd">Password</Form.Label>
                         <Form.Control
                             required
+                            id="pswd"
                             type="password"
                             placeholder="Password"
                             value={pwd}

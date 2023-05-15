@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Signup from "../firebase-setup/Signup";
 import Signin from "../firebase-setup/Signin";
+import userEvent from "@testing-library/user-event";
 
 describe("Testing Signup", () => {
     test("Button to Sign Up", () => {
@@ -21,7 +22,12 @@ describe("Testing Signup", () => {
                 <Signup />
             </MemoryRouter>
         );
-        expect(screen.getByRole("textbox")).toBeInTheDocument();
+        const emailText = screen.getByLabelText("Email");
+        userEvent.type(emailText, "1234email@gmail.com");
+        expect(emailText).toHaveValue("1234email@gmail.com");
+        const pswdText = screen.getByLabelText("Password");
+        userEvent.type(pswdText, "123456789");
+        expect(pswdText).toHaveValue("123456789");
     });
     test("Button to Signin", () => {
         render(
@@ -39,6 +45,11 @@ describe("Testing Signup", () => {
                 <Signin />
             </MemoryRouter>
         );
-        expect(screen.getByRole("textbox")).toBeInTheDocument();
+        const emailText = screen.getByLabelText("Email");
+        userEvent.type(emailText, "1234email@gmail.com");
+        expect(emailText).toHaveValue("1234email@gmail.com");
+        const pswdText = screen.getByLabelText("Password");
+        userEvent.type(pswdText, "123456789");
+        expect(pswdText).toHaveValue("123456789");
     });
 });
