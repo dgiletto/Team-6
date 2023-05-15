@@ -14,11 +14,15 @@ export function CartItem({ name, quantity }: cartItemProps) {
     const { removeFromCart } = useShoppingCart();
     const { increaseCartQty } = useShoppingCart();
     const { decreaseCartQty } = useShoppingCart();
+    const { increaseItemQty } = useShoppingCart();
+    const { decreaseItemQty } = useShoppingCart();
+
     const item = products.find((i) => i.name == name);
 
     if (item == null) {
         return null;
     }
+
     return (
         <Stack
             direction="horizontal"
@@ -47,26 +51,33 @@ export function CartItem({ name, quantity }: cartItemProps) {
                     <Button
                         className="w-25"
                         style={{ backgroundColor: "#829fda" }}
-                        onClick={() =>
+                        onClick={() => {
+                            increaseItemQty(name, 1);
                             quantity > 1
                                 ? decreaseCartQty(name)
-                                : removeFromCart(item.name)
-                        }
+                                : removeFromCart(item.name);
+                        }}
                     >
                         -
                     </Button>
                     <Button
                         className="w-25"
                         style={{ backgroundColor: "#829fda" }}
-                        onClick={() => increaseCartQty(name)}
+                        disabled={item.stock <= 0}
+                        onClick={() => {
+                            increaseCartQty(name);
+                            decreaseItemQty(item.name);
+                        }}
                     >
                         +
                     </Button>
                 </div>
                 <Button
                     variant="outline-danger"
-                    size="sm"
-                    onClick={() => removeFromCart(item.name)}
+                    onClick={() => {
+                        increaseItemQty(name, quantity);
+                        removeFromCart(item.name);
+                    }}
                 >
                     &times;
                 </Button>
