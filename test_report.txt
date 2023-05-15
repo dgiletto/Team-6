@@ -13,21 +13,21 @@ PASS src/Tests/SignupTesting.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   36.64 |    18.75 |   30.68 |   37.58 |                   
- src                      |   42.85 |    16.66 |   30.76 |   42.85 |                   
-  App.tsx                 |       0 |        0 |       0 |       0 | 25-40             
-  ModalView.tsx           |   33.33 |        0 |      25 |   33.33 | 53-75             
-  Products.tsx            |    64.7 |       50 |   42.85 |    64.7 | 54-98             
+All files                 |    36.6 |    19.35 |   31.03 |   37.58 |                   
+ src                      |      50 |       25 |   33.33 |      50 |                   
+  App.tsx                 |       0 |      100 |       0 |       0 | 36                
+  ModalView.tsx           |   33.33 |        0 |      25 |   33.33 | 53-76             
+  Products.tsx            |    64.7 |       50 |   42.85 |    64.7 | 54-99             
   firebase.ts             |       0 |      100 |     100 |       0 | 4-13              
   images.tsx              |     100 |      100 |     100 |     100 |                   
- src/components           |   65.57 |    28.94 |   55.26 |   64.91 |                   
+ src/components           |   63.79 |    28.94 |   55.26 |   62.96 |                   
   AdjustStock.tsx         |     100 |      100 |     100 |     100 |                   
   Cart.tsx                |   94.44 |     62.5 |      90 |     100 | 28-49,70          
   DisplayProductType.tsx  |       0 |      100 |       0 |       0 | 8-14              
   DisplayProducts.tsx     |     100 |      100 |     100 |     100 |                   
   EditStock.tsx           |     100 |      100 |     100 |     100 |                   
   Navigation.tsx          |       0 |        0 |       0 |       0 | 8-97              
-  cartItem.tsx            |   68.75 |    33.33 |      60 |   66.66 | 23,55-56,77-78    
+  cartItem.tsx            |   61.53 |    33.33 |      60 |   58.33 | 27,59-60,82-83    
  src/context              |    4.65 |        0 |    4.34 |    5.55 |                   
   shoppingCartContext.tsx |    4.65 |        0 |    4.34 |    5.55 | 35-113            
  src/extras               |     100 |      100 |     100 |     100 |                   
@@ -53,5 +53,5 @@ All files                 |   36.64 |    18.75 |   30.68 |   37.58 |
 Test Suites: 5 passed, 5 total
 Tests:       17 passed, 17 total
 Snapshots:   0 total
-Time:        10.128 s
+Time:        8.169 s
 Ran all test suites.
