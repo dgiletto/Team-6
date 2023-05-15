@@ -16,18 +16,19 @@ import { Admin } from "./pages/AdminPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
 //import { Account } from "./interfaces/accounts";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { ShoppingCartProvider } from "./context/shoppingCartContext";
-import { auth } from "./firebase-setup/firebase";
+//import { auth } from "./firebase-setup/firebase";
 
 function App(): JSX.Element {
-    //const navigate = useNavigate();
+    /*
+    const navigate = useNavigate();
     const user = auth.currentUser;
     let uid = "no user";
     if (user) {
         uid = user.uid;
     }
-    /*     {
+         {
         uid === "l2c8ViQj35RaGm06xy0MVJ82wQk2" && (
             <Route path="/admin" element={<Admin />} />
         );
@@ -37,7 +38,7 @@ function App(): JSX.Element {
             <header className="App-header">
                 <div className="Website-name">PCMart</div>
             </header>
-            <Button onClick={() => console.log("uid is " + uid)}>Click</Button>
+            {/*<Button onClick={() => console.log("uid is " + uid)}>Click</Button>*/}
             <ShoppingCartProvider>
                 <BrowserRouter>
                     <Navigate />
@@ -56,6 +57,7 @@ function App(): JSX.Element {
                             <Route path="/signup" element={<SignupPage />} />
                             <Route path="/signin" element={<SigninPage />} />
                             <Route path="/admin" element={<Admin />} />
+                            <Route path="*" element={<Home />} />
                         </Routes>
                     </Container>
                 </BrowserRouter>

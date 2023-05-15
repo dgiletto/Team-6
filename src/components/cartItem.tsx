@@ -11,11 +11,15 @@ type cartItemProps = {
 };
 
 export function CartItem({ name, quantity }: cartItemProps) {
-    const { removeFromCart } = useShoppingCart();
-    const { increaseCartQty } = useShoppingCart();
-    const { decreaseCartQty } = useShoppingCart();
-    const { increaseItemQty } = useShoppingCart();
-    const { decreaseItemQty } = useShoppingCart();
+    const {
+        getItemQty,
+        increaseCartQty,
+        decreaseCartQty,
+        removeFromCart,
+        increaseItemQty,
+        decreaseItemQty
+    } = useShoppingCart();
+    const amount = getItemQty(name);
 
     const item = products.find((i) => i.name == name);
 
@@ -75,7 +79,7 @@ export function CartItem({ name, quantity }: cartItemProps) {
                 <Button
                     variant="outline-danger"
                     onClick={() => {
-                        increaseItemQty(name, quantity);
+                        increaseItemQty(name, amount);
                         removeFromCart(item.name);
                     }}
                 >
