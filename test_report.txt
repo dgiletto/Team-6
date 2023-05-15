@@ -5,28 +5,495 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/Tests/InventoryTesting.test.tsx (5.641 s)
-PASS src/Tests/CheckoutTesting.test.tsx
-PASS src/Tests/CartTesting.test.tsx
+FAIL src/Tests/InventoryTesting.test.tsx
+  ● Testing Cart › Buttons add to cart
+
+    TestingLibraryElementError: Unable to find an element with the text: Dell Poweredge r720. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"g-3 row row-cols-lg-3 row-cols-md-2 row-cols-1"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Product img"[39m
+                  [33mclass[39m=[32m"card-img-top"[39m
+                  [33mheight[39m=[32m"200px"[39m
+                  [33msrc[39m=[32m"i9-13900k-resize.png"[39m
+                  [33mstyle[39m=[32m"object-fit: cover;"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex flex-column card-body"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex justify-content-between align-items-baseline mb-4 card-title h5"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"fs-2"[39m
+                    [36m>[39m
+                      [0mIntel i9-13900K[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"ms-2 text-muted"[39m
+                    [36m>[39m
+                      [0m$580.00[0m
+                    [36m</span>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"mt-auto"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"d-flex align-items-center flex-column"[39m
+                      [33mstyle[39m=[32m"gap: .5rem;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"d-flex align-items-center justify-content-center"[39m
+                        [33mstyle[39m=[32m"gap: .5rem;"[39m
+                      [36m>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m-[0m
+                        [36m</button>[39m
+                        [36m<div>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"fs-3"[39m
+                          [36m/>[39m
+                          [0m in cart[0m
+                        [36m</div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m+[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-danger btn-sm"[39m
+                        [33mstyle[39m=[32m"background-color: rgb(204, 82, 55);"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Product img"[39m
+                  [33mclass[39m=[32m"card-img-top"[39m
+                  [33mheight[39m=[32m"200px"[39m
+                  [33msrc[39m=[32m"Ryzen-7-7700X-resize.jpeg"[39m
+                  [33mstyle[39m=[32m"object-fit: cover;"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex flex-column card-body"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex justify-content-between align-items-baseline mb-4 card-title h5"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"fs-2"[39m
+                    [36m>[39m
+                      [0mRyzen 7 7700X[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"ms-2 text-muted"[39m
+                    [36m>[39m
+                      [0m$320.00[0m
+                    [36m</span>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"mt-auto"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"d-flex align-items-center flex-column"[39m
+                      [33mstyle[39m=[32m"gap: .5rem;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"d-flex align-items-center justify-content-center"[39m
+                        [33mstyle[39m=[32m"gap: .5rem;"[39m
+                      [36m>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m-[0m
+                        [36m</button>[39m
+                        [36m<div>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"fs-3"[39m
+                          [36m/>[39m
+                          [0m in cart[0m
+                        [36m</div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m+[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-danger btn-sm"[39m
+                        [33mstyle[39m=[32m"background-color: rgb(204, 82, 55);"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[...
+
+      77 |         );
+      78 |         expect(screen.getByText("Corsair Vengeance 8GB RAM")).toBeInTheDocument;
+    > 79 |         expect(screen.getByText("Dell Poweredge r720")).toBeInTheDocument;
+         |                       ^
+      80 |         expect(screen.getByText("Seagate BarraCuda 8TB HDD")).toBeInTheDocument;
+      81 |         expect(screen.getByText("Thermaltake Versa H18")).toBeInTheDocument;
+      82 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Tests/InventoryTesting.test.tsx:79:23)
+
+  ● Testing Cart › Buttons remove from cart
+
+    TestingLibraryElementError: Unable to find an element with the text: Dell Poweredge r720. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"g-3 row row-cols-lg-3 row-cols-md-2 row-cols-1"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Product img"[39m
+                  [33mclass[39m=[32m"card-img-top"[39m
+                  [33mheight[39m=[32m"200px"[39m
+                  [33msrc[39m=[32m"i9-13900k-resize.png"[39m
+                  [33mstyle[39m=[32m"object-fit: cover;"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex flex-column card-body"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex justify-content-between align-items-baseline mb-4 card-title h5"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"fs-2"[39m
+                    [36m>[39m
+                      [0mIntel i9-13900K[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"ms-2 text-muted"[39m
+                    [36m>[39m
+                      [0m$580.00[0m
+                    [36m</span>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"mt-auto"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"d-flex align-items-center flex-column"[39m
+                      [33mstyle[39m=[32m"gap: .5rem;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"d-flex align-items-center justify-content-center"[39m
+                        [33mstyle[39m=[32m"gap: .5rem;"[39m
+                      [36m>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m-[0m
+                        [36m</button>[39m
+                        [36m<div>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"fs-3"[39m
+                          [36m/>[39m
+                          [0m in cart[0m
+                        [36m</div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m+[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-danger btn-sm"[39m
+                        [33mstyle[39m=[32m"background-color: rgb(204, 82, 55);"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Product img"[39m
+                  [33mclass[39m=[32m"card-img-top"[39m
+                  [33mheight[39m=[32m"200px"[39m
+                  [33msrc[39m=[32m"Ryzen-7-7700X-resize.jpeg"[39m
+                  [33mstyle[39m=[32m"object-fit: cover;"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex flex-column card-body"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex justify-content-between align-items-baseline mb-4 card-title h5"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"fs-2"[39m
+                    [36m>[39m
+                      [0mRyzen 7 7700X[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"ms-2 text-muted"[39m
+                    [36m>[39m
+                      [0m$320.00[0m
+                    [36m</span>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"mt-auto"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"d-flex align-items-center flex-column"[39m
+                      [33mstyle[39m=[32m"gap: .5rem;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"d-flex align-items-center justify-content-center"[39m
+                        [33mstyle[39m=[32m"gap: .5rem;"[39m
+                      [36m>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m-[0m
+                        [36m</button>[39m
+                        [36m<div>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"fs-3"[39m
+                          [36m/>[39m
+                          [0m in cart[0m
+                        [36m</div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mstyle[39m=[32m"background-color: rgb(130, 159, 218);"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0m+[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-danger btn-sm"[39m
+                        [33mstyle[39m=[32m"background-color: rgb(204, 82, 55);"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"col"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"h-100 card"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[...
+
+      116 |         expect(screen.getByText("Corsair Vengeance 8GB RAM")).not
+      117 |             .toBeInTheDocument;
+    > 118 |         expect(screen.getByText("Dell Poweredge r720")).not.toBeInTheDocument;
+          |                       ^
+      119 |         expect(screen.getByText("Seagate BarraCuda 8TB HDD")).not
+      120 |             .toBeInTheDocument;
+      121 |         expect(screen.getByText("Thermaltake Versa H18")).not.toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Tests/InventoryTesting.test.tsx:118:23)
+
+FAIL src/Tests/CheckoutTesting.test.tsx
+  ● Testing Checkout › Checkout has required fields and total
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      50 |     });
+      51 |     test("Checkout has required fields and total", () => {
+    > 52 |         expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+         |                                                       ^
+      53 |         const use = screen.getByRole("button", {
+      54 |             name: "Checkout"
+      55 |         });
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/Tests/CheckoutTesting.test.tsx:52:55)
+
+  ● Testing Checkout › Checkout has working textbox fields
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      59 |     });
+      60 |     test("Checkout has working textbox fields", () => {
+    > 61 |         expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+         |                                                       ^
+      62 |         const use = screen.getByRole("button", {
+      63 |             name: "Checkout"
+      64 |         });
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/Tests/CheckoutTesting.test.tsx:61:55)
+
+  ● Testing Checkout › Checkout has cancel and Submit
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      81 |     });
+      82 |     test("Checkout has cancel and Submit", () => {
+    > 83 |         expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+         |                                                       ^
+      84 |         const use = screen.getByRole("button", {
+      85 |             name: "Checkout"
+      86 |         });
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/Tests/CheckoutTesting.test.tsx:83:55)
+
+FAIL src/Tests/CartTesting.test.tsx
+  ● Testing Cart › Cart has items
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      70 |             </ShoppingCartContext.Provider>
+      71 |         );
+    > 72 |         expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+         |                                                       ^
+      73 |     });
+      74 |     test("Checkout Opens", () => {
+      75 |         render(
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/Tests/CartTesting.test.tsx:72:55)
+
+  ● Testing Cart › Checkout Opens
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      80 |             </ShoppingCartContext.Provider>
+      81 |         );
+    > 82 |         expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+         |                                                       ^
+      83 |         const use = screen.getByRole("button", {
+      84 |             name: "Checkout"
+      85 |         });
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/Tests/CartTesting.test.tsx:82:55)
+
 PASS src/Tests/SignupTesting.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   30.46 |     12.9 |   23.52 |   30.93 |                   
- src                      |      48 |       25 |      40 |      48 |                   
+All files                 |   28.84 |    14.06 |   20.45 |   29.86 |                   
+ src                      |   46.66 |    16.66 |   30.76 |   46.66 |                   
   App.tsx                 |       0 |        0 |       0 |       0 | 25-40             
-  ModalView.tsx           |     100 |      100 |     100 |     100 |                   
-  Products.tsx            |   66.66 |       50 |   42.85 |   66.66 | 52-93             
+  ModalView.tsx           |      50 |        0 |      25 |      50 | 45-59             
+  Products.tsx            |   66.66 |       50 |   42.85 |   66.66 | 54-96             
   firebase.ts             |       0 |      100 |     100 |       0 | 4-13              
   images.tsx              |     100 |      100 |     100 |     100 |                   
- src/components           |   49.18 |    18.42 |   36.84 |   47.36 |                   
+ src/components           |   44.26 |    21.05 |   31.57 |   43.85 |                   
   AdjustStock.tsx         |       0 |        0 |       0 |       0 | 6-27              
-  Cart.tsx                |   94.44 |     62.5 |      90 |     100 | 28-49,70          
+  Cart.tsx                |   88.88 |     87.5 |      80 |     100 | 54                
   DisplayProductType.tsx  |       0 |      100 |       0 |       0 | 8-14              
   DisplayProducts.tsx     |     100 |      100 |     100 |     100 |                   
   EditStock.tsx           |       0 |      100 |       0 |       0 | 7-21              
   Navigation.tsx          |       0 |        0 |       0 |       0 | 8-97              
-  cartItem.tsx            |   68.75 |    33.33 |      60 |   66.66 | 23,55-56,78-79    
+  cartItem.tsx            |   56.25 |    16.66 |      40 |   53.33 | 26-79             
  src/context              |    4.65 |        0 |    4.34 |    5.55 |                   
   shoppingCartContext.tsx |    4.65 |        0 |    4.34 |    5.55 | 35-113            
  src/extras               |     100 |      100 |     100 |     100 |                   
@@ -49,8 +516,8 @@ All files                 |   30.46 |     12.9 |   23.52 |   30.93 |
   StoragePage.tsx         |       0 |      100 |       0 |       0 | 5                 
 --------------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 4 passed, 4 total
-Tests:       14 passed, 14 total
+Test Suites: 3 failed, 1 passed, 4 total
+Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        10.919 s
+Time:        6.589 s
 Ran all test suites.
