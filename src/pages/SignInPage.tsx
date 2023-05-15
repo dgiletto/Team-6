@@ -1,7 +1,6 @@
 import React from "react";
 import Signin from "../firebase-setup/Signin";
 import { Container } from "react-bootstrap";
-import AuthDetails from "../firebase-setup/AuthDetails";
 
 export function SigninPage(): JSX.Element {
     return (
@@ -11,7 +10,6 @@ export function SigninPage(): JSX.Element {
         >
             <div className="w-100" style={{ maxWidth: "400px" }}>
                 <Signin></Signin>
-                <AuthDetails></AuthDetails>
             </div>
         </Container>
     );
