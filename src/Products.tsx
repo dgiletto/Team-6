@@ -75,6 +75,7 @@ export function ProductCards({
                             className="w-100"
                             style={{ backgroundColor: "#829fda" }}
                             onClick={() => {
+                                decreaseItemQty(name);
                                 increaseCartQty(name);
                             }}
                         >
@@ -92,7 +93,7 @@ export function ProductCards({
                                 <Button
                                     style={{ backgroundColor: "#829fda" }}
                                     onClick={() => {
-                                        increaseItemQty(name, amount);
+                                        increaseItemQty(name, 1);
                                         decreaseCartQty(name);
                                     }}
                                 >

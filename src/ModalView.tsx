@@ -4,9 +4,16 @@ import Modal, { ModalProps } from "react-bootstrap/Modal";
 import { useShoppingCart } from "./context/shoppingCartContext";
 
 export function ModalView(props: ModalProps) {
-    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
-        useShoppingCart();
+    const {
+        getItemQty,
+        increaseCartQty,
+        decreaseCartQty,
+        removeFromCart,
+        increaseItemQty,
+        decreaseItemQty
+    } = useShoppingCart();
     const amount = getItemQty(props.name);
+
     return (
         <Modal
             {...props}
@@ -41,22 +48,31 @@ export function ModalView(props: ModalProps) {
                     style={{ gap: ".5rem" }}
                 >
                     <Button
-                        onClick={() =>
+                        onClick={() => {
+                            increaseItemQty(props.name, 1);
                             amount > 1
                                 ? decreaseCartQty(props.name)
-                                : removeFromCart(props.name)
-                        }
+                                : removeFromCart(props.name);
+                        }}
                     >
                         -
                     </Button>
                     {amount} in cart
-                    <Button onClick={() => increaseCartQty(props.name)}>
+                    <Button
+                        onClick={() => {
+                            increaseCartQty(props.name);
+                            decreaseItemQty(props.name);
+                        }}
+                    >
                         +
                     </Button>
                 </div>
                 <Button
                     variant="outline-danger"
-                    onClick={() => removeFromCart(props.name)}
+                    onClick={() => {
+                        removeFromCart(props.name);
+                        increaseItemQty(props.name, amount);
+                    }}
                 >
                     Remove
                 </Button>

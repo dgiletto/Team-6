@@ -63,7 +63,7 @@
         "name": "MSI MPG Z490",
         "image": "./images/MSI-MPG-Z490-resize.jpg",
         "price": 200,
-        "quantity": 130,
+        "quantity": 0,
         "stock": 5,
         "in_stock": true,
         "type": "MB",
