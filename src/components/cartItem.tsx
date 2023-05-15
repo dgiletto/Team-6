@@ -74,7 +74,7 @@ export function CartItem({ name, quantity }: cartItemProps) {
                     <Button
                         variant="outline-danger"
                         onClick={() => {
-                            increaseItemQty(name, quantity);
+                            increaseItemQty(name, item.quantity);
                             removeFromCart(item.name);
                         }}
                     >
