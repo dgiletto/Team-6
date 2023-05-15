@@ -77,6 +77,7 @@ export function ProductCards({
                             disabled={amount >= stock}
                             onClick={() => {
                                 increaseCartQty(name);
+                                decreaseItemQty(name);
                             }}
                         >
                             Add to Cart
