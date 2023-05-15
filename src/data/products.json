@@ -4,7 +4,7 @@
         "image": "./images/i9-13900k-resize.png",
         "price": 580,
         "quantity": 0,
-        "stock": 4,
+        "stock": 5,
         "in_stock": true,
         "type": "CPU"
     },
