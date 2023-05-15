@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal, { ModalProps } from "react-bootstrap/Modal";
-//import { Row, Col, Container } from "react-bootstrap";
 
 export function ModalView(props: ModalProps) {
     return (
@@ -33,7 +32,7 @@ export function ModalView(props: ModalProps) {
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <Button>Add to Cart</Button>
+                <Button> Add To Cart</Button>
                 <Button onClick={props.onHide}>Cancel</Button>
             </Modal.Footer>
         </Modal>
