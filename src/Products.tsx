@@ -71,6 +71,7 @@ export function ProductCards({
                         <Button
                             className="w-100"
                             style={{ backgroundColor: "#829fda" }}
+                            disabled={amount >= stock}
                             onClick={() => {
                                 increaseCartQty(name);
                             }}
@@ -101,6 +102,7 @@ export function ProductCards({
                                 </div>
                                 <Button
                                     style={{ backgroundColor: "#829fda" }}
+                                    disabled={amount >= stock}
                                     onClick={() => {
                                         increaseCartQty(name);
                                         decreaseItemQty(name);
