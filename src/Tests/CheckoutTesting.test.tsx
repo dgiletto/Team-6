@@ -9,7 +9,7 @@ type cartItem = {
     quantity: number;
 };
 const item: cartItem = {
-    name: "Intel I9-13900K",
+    name: "Intel i9-13900K",
     quantity: 1
 };
 const providerProps = {
@@ -49,7 +49,6 @@ describe("Testing Checkout", () => {
         );
     });
     test("Checkout has required fields and total", () => {
-        expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
         const use = screen.getByRole("button", {
             name: "Checkout"
         });
@@ -58,7 +57,7 @@ describe("Testing Checkout", () => {
         expect(screen.getByText("Total: $580.00")).toBeInTheDocument();
     });
     test("Checkout has working textbox fields", () => {
-        expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+        expect(screen.queryByText("Intel i9-13900K")).toBeInTheDocument();
         const use = screen.getByRole("button", {
             name: "Checkout"
         });
@@ -80,7 +79,7 @@ describe("Testing Checkout", () => {
         expect(zip).toHaveValue("19703");
     });
     test("Checkout has cancel and Submit", () => {
-        expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+        expect(screen.queryByText("Intel i9-13900K")).toBeInTheDocument();
         const use = screen.getByRole("button", {
             name: "Checkout"
         });

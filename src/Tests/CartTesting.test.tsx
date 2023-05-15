@@ -8,7 +8,7 @@ type cartItem = {
     quantity: number;
 };
 const item: cartItem = {
-    name: "Intel I9-13900K",
+    name: "Intel i9-13900K",
     quantity: 1
 };
 const providerProps = {
@@ -47,9 +47,9 @@ describe("Testing Cart", () => {
             </ShoppingCartContext.Provider>
         );
     });
-    test("Cart is and item are not displayed", () => {
+    test("Cart and item are not displayed", () => {
         expect(screen.queryByText("Cart")).not.toBeInTheDocument();
-        expect(screen.queryByText("Intel I9-13900K")).not.toBeInTheDocument();
+        expect(screen.queryByText("Intel i9-13900K")).not.toBeInTheDocument();
     });
     test("Cart is displayed", () => {
         render(
@@ -69,7 +69,7 @@ describe("Testing Cart", () => {
                 </MemoryRouter>
             </ShoppingCartContext.Provider>
         );
-        expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+        expect(screen.queryByText("Intel i9-13900K")).toBeInTheDocument();
     });
     test("Checkout Opens", () => {
         render(
@@ -79,7 +79,7 @@ describe("Testing Cart", () => {
                 </MemoryRouter>
             </ShoppingCartContext.Provider>
         );
-        expect(screen.queryByText("Intel I9-13900K")).toBeInTheDocument();
+        expect(screen.queryByText("Intel i9-13900K")).toBeInTheDocument();
         const use = screen.getByRole("button", {
             name: "Checkout"
         });
