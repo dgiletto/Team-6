@@ -5,7 +5,7 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/Tests/InventoryTesting.test.tsx
+PASS src/Tests/InventoryTesting.test.tsx (5.406 s)
 PASS src/Tests/CheckoutTesting.test.tsx
 PASS src/Tests/CartTesting.test.tsx
 PASS src/Tests/AdminTesting.test.tsx
@@ -13,20 +13,20 @@ PASS src/Tests/SignupTesting.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |    36.6 |    19.35 |   31.03 |   37.58 |                   
+All files                 |   37.08 |    20.68 |   31.76 |   38.12 |                   
  src                      |      50 |       25 |   33.33 |      50 |                   
-  App.tsx                 |       0 |      100 |       0 |       0 | 36                
+  App.tsx                 |       0 |      100 |       0 |       0 | 39                
   ModalView.tsx           |   33.33 |        0 |      25 |   33.33 | 53-76             
   Products.tsx            |    64.7 |       50 |   42.85 |    64.7 | 54-99             
   firebase.ts             |       0 |      100 |     100 |       0 | 4-13              
   images.tsx              |     100 |      100 |     100 |     100 |                   
- src/components           |   63.79 |    28.94 |   55.26 |   62.96 |                   
+ src/components           |   66.07 |    32.35 |   58.33 |   65.38 |                   
   AdjustStock.tsx         |     100 |      100 |     100 |     100 |                   
   Cart.tsx                |   94.44 |     62.5 |      90 |     100 | 28-49,70          
   DisplayProductType.tsx  |       0 |      100 |       0 |       0 | 8-14              
   DisplayProducts.tsx     |     100 |      100 |     100 |     100 |                   
   EditStock.tsx           |     100 |      100 |     100 |     100 |                   
-  Navigation.tsx          |       0 |        0 |       0 |       0 | 8-97              
+  Navigation.tsx          |       0 |        0 |       0 |       0 | 8-79              
   cartItem.tsx            |   61.53 |    33.33 |      60 |   58.33 | 27,59-60,82-83    
  src/context              |    4.65 |        0 |    4.34 |    5.55 |                   
   shoppingCartContext.tsx |    4.65 |        0 |    4.34 |    5.55 | 35-113            
@@ -34,9 +34,6 @@ All files                 |    36.6 |    19.35 |   31.03 |   37.58 |
   formatMoney.ts          |     100 |      100 |     100 |     100 |                   
  src/hooks                |       0 |        0 |       0 |       0 |                   
   useLocalStorage.ts      |       0 |        0 |       0 |       0 | 4-18              
- src/interfaces           |       0 |        0 |       0 |       0 |                   
-  accounts.ts             |       0 |        0 |       0 |       0 |                   
-  orders.ts               |       0 |        0 |       0 |       0 |                   
  src/pages                |       0 |      100 |       0 |       0 |                   
   AdminPage.tsx           |       0 |      100 |       0 |       0 | 6                 
   CasesPage.tsx           |       0 |      100 |       0 |       0 | 5                 
@@ -45,7 +42,7 @@ All files                 |    36.6 |    19.35 |   31.03 |   37.58 |
   MBoardPage.tsx          |       0 |      100 |       0 |       0 | 5                 
   ProcessorPage.tsx       |       0 |      100 |       0 |       0 | 5                 
   RamPage.tsx             |       0 |      100 |       0 |       0 | 5                 
-  SignInPage.tsx          |       0 |      100 |       0 |       0 | 7                 
+  SignInPage.tsx          |       0 |      100 |       0 |       0 | 6                 
   SignupPage.tsx          |       0 |      100 |       0 |       0 | 6                 
   StoragePage.tsx         |       0 |      100 |       0 |       0 | 5                 
 --------------------------|---------|----------|---------|---------|-------------------
@@ -53,5 +50,5 @@ All files                 |    36.6 |    19.35 |   31.03 |   37.58 |
 Test Suites: 5 passed, 5 total
 Tests:       17 passed, 17 total
 Snapshots:   0 total
-Time:        8.169 s
+Time:        12.221 s
 Ran all test suites.
