@@ -55,8 +55,8 @@ function App(): JSX.Element {
                             <Route path="/cases" element={<Cases />} />
                             <Route path="/signup" element={<SignupPage />} />
                             <Route path="/signin" element={<SigninPage />} />
-                            <Route path="*" element={<Home />} />
                             <Route path="/admin" element={<Admin />} />
+                            <Route path="*" element={<Home />} />
                         </Routes>
                     </Container>
                 </BrowserRouter>
