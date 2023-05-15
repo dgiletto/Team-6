@@ -4,7 +4,7 @@
         "image": "./images/i9-13900k-resize.png",
         "price": 580,
         "quantity": 0,
-        "stock": 100,
+        "stock": 4,
         "in_stock": true,
         "type": "CPU"
     },
@@ -13,7 +13,7 @@
         "image": "./images/Ryzen-7-7700X-resize.jpeg",
         "price": 320,
         "quantity": 0,
-        "stock": 200,
+        "stock": 5,
         "in_stock": true,
         "type": "CPU"
     },
@@ -22,7 +22,7 @@
         "image": "./images/MSI-RTX3060Ti-resize.png",
         "price": 360,
         "quantity": 0,
-        "stock": 150,
+        "stock": 5,
         "in_stock": true,
         "type": "GPU"
     },
@@ -31,7 +31,7 @@
         "image": "./images/Powercolor-Radeon-6600-resize.jpeg",
         "price": 220,
         "quantity": 0,
-        "stock": 300,
+        "stock": 5,
         "in_stock": true,
         "type": "GPU"
     },
@@ -40,7 +40,7 @@
         "image": "./images/Corsair-Vengeance-DDR4-8gb-resize.jpeg",
         "price": 25,
         "quantity": 0,
-        "stock": 350,
+        "stock": 5,
         "in_stock": true,
         "type": "RAM"
     },
@@ -49,7 +49,7 @@
         "image": "./images/RAM-Vengeance-ProRGB-16GB-resize.jpeg",
         "price": 65,
         "quantity": 0,
-        "stock": 200,
+        "stock": 5,
         "in_stock": true,
         "type": "RAM"
     },
@@ -58,7 +58,7 @@
         "image": "./images/MBD-Dell_PE_R720V1-resize.jpeg",
         "price": 200,
         "quantity": 0,
-        "stock": 150,
+        "stock": 5,
         "in_stock": true,
         "type": "MB"
     },
@@ -67,7 +67,7 @@
         "image": "./images/MBD-X11SAE-resize.jpeg",
         "price": 350,
         "quantity": 0,
-        "stock": 100,
+        "stock": 5,
         "in_stock": true,
         "type": "MB"
     },
@@ -76,7 +76,7 @@
         "image": "./images/980pro-ssd-resize.jpeg",
         "price": 90,
         "quantity": 0,
-        "stock": 220,
+        "stock": 5,
         "in_stock": true,
         "type": "Storage"
     },
@@ -85,7 +85,7 @@
         "image": "./images/hdd-resize.png",
         "price": 100,
         "quantity": 0,
-        "stock": 100,
+        "stock": 5,
         "in_stock": true,
         "type": "Storage"
     },
@@ -94,7 +94,7 @@
         "image": "./images/Corsair-4000D-resize.jpeg",
         "price": 95,
         "quantity": 0,
-        "stock": 400,
+        "stock": 5,
         "in_stock": true,
         "type": "Case"
     },
@@ -103,7 +103,7 @@
         "image": "./images/Thermaltake-Versa-H18-resize.jpeg",
         "price": 50,
         "quantity": 0,
-        "stock": 500,
+        "stock": 5,
         "in_stock": true,
         "type": "Case"
     }

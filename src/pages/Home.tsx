@@ -1,6 +1,5 @@
 import React from "react";
 import { DisplayProducts } from "../components/DisplayProducts";
-//import { DisplayProducts } from "../components/DisplayProducts";
 
 export function Home(): JSX.Element {
     return (
