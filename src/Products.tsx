@@ -58,6 +58,7 @@ export function ProductCards({
                 image={image}
                 price={price}
                 quantity={quantity}
+                stock={stock}
                 description={description}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
@@ -78,7 +79,6 @@ export function ProductCards({
                             onClick={() => {
                                 decreaseItemQty(name);
                                 increaseCartQty(name);
-                                decreaseItemQty(name);
                             }}
                         >
                             Add to Cart
@@ -121,7 +121,7 @@ export function ProductCards({
                                 size="sm"
                                 style={{ backgroundColor: "#cc5237" }}
                                 onClick={() => {
-                                    increaseItemQty(name, quantity);
+                                    increaseItemQty(name, amount);
                                     removeFromCart(name);
                                 }}
                             >
