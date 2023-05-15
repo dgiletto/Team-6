@@ -11,7 +11,7 @@ type cartItem = {
     quantity: number;
 };
 const item: cartItem = {
-    name: "Intel I9-13900K",
+    name: "Intel i9-13900K",
     quantity: 1
 };
 const providerProps = {
@@ -27,7 +27,7 @@ const providerProps = {
     increaseCartQty: jest.fn()
 };
 
-describe("Testing Cart", () => {
+describe("Testing Inventory", () => {
     beforeEach(() => {
         Object.defineProperty(window, "matchMedia", {
             writable: true,
@@ -76,7 +76,7 @@ describe("Testing Cart", () => {
             </ShoppingCartContext.Provider>
         );
         expect(screen.getByText("Corsair Vengeance 8GB RAM")).toBeInTheDocument;
-        expect(screen.getByText("Dell Poweredge r720")).toBeInTheDocument;
+        expect(screen.getByText("MSI MPG Z490")).toBeInTheDocument;
         expect(screen.getByText("Seagate BarraCuda 8TB HDD")).toBeInTheDocument;
         expect(screen.getByText("Thermaltake Versa H18")).toBeInTheDocument;
     });
@@ -115,7 +115,7 @@ describe("Testing Cart", () => {
         );
         expect(screen.getByText("Corsair Vengeance 8GB RAM")).not
             .toBeInTheDocument;
-        expect(screen.getByText("Dell Poweredge r720")).not.toBeInTheDocument;
+        expect(screen.getByText("MSI MPG Z490")).not.toBeInTheDocument;
         expect(screen.getByText("Seagate BarraCuda 8TB HDD")).not
             .toBeInTheDocument;
         expect(screen.getByText("Thermaltake Versa H18")).not.toBeInTheDocument;

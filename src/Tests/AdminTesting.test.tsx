@@ -11,7 +11,7 @@ type cartItem = {
     quantity: number;
 };
 const item: cartItem = {
-    name: "Intel I9-13900K",
+    name: "Intel i9-13900K",
     quantity: 1
 };
 const providerProps = {
