@@ -12,6 +12,7 @@ type Product = {
     stock: number;
     in_stock: boolean;
     type: string;
+    description: string;
 };
 
 export function ProductCards({
@@ -22,7 +23,8 @@ export function ProductCards({
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     stock,
     in_stock,
-    type
+    type,
+    description
 }: Product) {
     const {
         getItemQty,
@@ -56,6 +58,7 @@ export function ProductCards({
                 image={image}
                 price={price}
                 quantity={quantity}
+                description={description}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
             />
