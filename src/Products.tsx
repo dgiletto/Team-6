@@ -76,6 +76,7 @@ export function ProductCards({
                             style={{ backgroundColor: "#829fda" }}
                             onClick={() => {
                                 increaseCartQty(name);
+                                decreaseItemQty(name);
                             }}
                         >
                             Add to Cart
