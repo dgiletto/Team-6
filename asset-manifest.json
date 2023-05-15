@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team-6/static/css/main.fa3e3949.css",
-    "main.js": "/Team-6/static/js/main.d5d2b004.js",
+    "main.js": "/Team-6/static/js/main.3751cd6e.js",
     "static/js/787.9a502bfc.chunk.js": "/Team-6/static/js/787.9a502bfc.chunk.js",
     "static/media/MBD-X11SAE-resize.jpeg": "/Team-6/static/media/MBD-X11SAE-resize.aac2df892b3307e021a0.jpeg",
     "static/media/i9-13900k-resize.png": "/Team-6/static/media/i9-13900k-resize.c0140cdc3ccc4086bbac.png",
@@ -12,11 +12,11 @@
     "static/media/MBD-Dell_PE_R720V1-resize.jpeg": "/Team-6/static/media/MBD-Dell_PE_R720V1-resize.05169e7122e63255cd1f.jpeg",
     "index.html": "/Team-6/index.html",
     "main.fa3e3949.css.map": "/Team-6/static/css/main.fa3e3949.css.map",
-    "main.d5d2b004.js.map": "/Team-6/static/js/main.d5d2b004.js.map",
+    "main.3751cd6e.js.map": "/Team-6/static/js/main.3751cd6e.js.map",
     "787.9a502bfc.chunk.js.map": "/Team-6/static/js/787.9a502bfc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa3e3949.css",
-    "static/js/main.d5d2b004.js"
+    "static/js/main.3751cd6e.js"
   ]
 }
