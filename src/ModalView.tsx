@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal, { ModalProps } from "react-bootstrap/Modal";
+import { useShoppingCart } from "./context/shoppingCartContext";
 
 export function ModalView(props: ModalProps) {
     const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =

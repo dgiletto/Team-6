@@ -1,5 +1,5 @@
 import React from "react";
-import { getByLabelText, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Signup from "../firebase-setup/Signup";
 import Signin from "../firebase-setup/Signin";
