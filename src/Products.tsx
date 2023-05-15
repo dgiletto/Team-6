@@ -20,21 +20,29 @@ export function ProductCards({
     image,
     price,
     quantity,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     stock,
     in_stock,
     type,
     description
 }: Product) {
-    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
-        useShoppingCart();
+    const {
+        getItemQty,
+        increaseItemQty,
+        decreaseItemQty,
+        increaseCartQty,
+        decreaseCartQty,
+        removeFromCart
+    } = useShoppingCart();
     const amount = getItemQty(name);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    stock = 10;
+    quantity = 0;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     in_stock = true;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     type = "item";
     const [modalShow, setModalShow] = React.useState(false);
+
     return (
         <Card className="h-100">
             <Card.Img
@@ -66,7 +74,9 @@ export function ProductCards({
                         <Button
                             className="w-100"
                             style={{ backgroundColor: "#829fda" }}
-                            onClick={() => increaseCartQty(name)}
+                            onClick={() => {
+                                increaseCartQty(name);
+                            }}
                         >
                             Add to Cart
                         </Button>
@@ -81,7 +91,10 @@ export function ProductCards({
                             >
                                 <Button
                                     style={{ backgroundColor: "#829fda" }}
-                                    onClick={() => decreaseCartQty(name)}
+                                    onClick={() => {
+                                        increaseItemQty(name, amount);
+                                        decreaseCartQty(name);
+                                    }}
                                 >
                                     -
                                 </Button>
@@ -91,7 +104,10 @@ export function ProductCards({
                                 </div>
                                 <Button
                                     style={{ backgroundColor: "#829fda" }}
-                                    onClick={() => increaseCartQty(name)}
+                                    onClick={() => {
+                                        increaseCartQty(name);
+                                        decreaseItemQty(name);
+                                    }}
                                 >
                                     +
                                 </Button>

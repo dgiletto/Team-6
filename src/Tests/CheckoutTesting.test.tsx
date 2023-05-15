@@ -18,6 +18,8 @@ const providerProps = {
     openCart: jest.fn(),
     closeCart: jest.fn(),
     getItemQty: jest.fn(),
+    increaseItemQty: jest.fn(),
+    decreaseItemQty: jest.fn(),
     removeFromCart: jest.fn(),
     decreaseCartQty: jest.fn(),
     increaseCartQty: jest.fn()

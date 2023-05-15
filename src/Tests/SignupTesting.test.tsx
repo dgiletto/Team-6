@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import Signup from "../components/Signup";
+import Signup from "../firebase-setup/Signup";
 import Signin from "../firebase-setup/Signin";
 
 describe("Testing Signup", () => {

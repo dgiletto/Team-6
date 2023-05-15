@@ -91,6 +91,15 @@ export function Navigate() {
                 >
                     Sign In
                 </NavLink>
+                <NavLink
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/admin"
+                >
+                    Admin
+                </NavLink>
                 <Button
                     onClick={openCart}
                     style={{

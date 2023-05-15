@@ -5,9 +5,6 @@ import products from "../data/products.json";
 import { images } from "../images";
 
 export function DisplayProductsType(type: string): JSX.Element {
-    //const filteredProducts = products.filter(
-    //(product): boolean => product.type === type
-    //);
     return (
         <div>
             <Row md={2} xs={1} lg={3} className="g-3">

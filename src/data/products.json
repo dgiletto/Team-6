@@ -4,7 +4,7 @@
         "image": "./images/i9-13900k-resize.png",
         "price": 580,
         "quantity": 0,
-        "stock": 100,
+        "stock": 4,
         "in_stock": true,
         "type": "CPU",
         "description": "Cores: 24 cores (8 P-cores + 16 E-cores), 32 Threads | Base Clock Speed: 3.00GHz (P-core), 2.20GHz (E-core) | Boost Clock Speed: 5.40GHz (P-core), 4.30GHz (E-core)"
@@ -14,7 +14,7 @@
         "image": "./images/Ryzen-7-7700X-resize.jpeg",
         "price": 320,
         "quantity": 0,
-        "stock": 200,
+        "stock": 5,
         "in_stock": true,
         "type": "CPU",
         "description": "Cores: 8 cores, 16 threads | Base Clock Speed: 4.50GHz | Boost Clock Speed: 5.4GHz0"
@@ -24,7 +24,7 @@
         "image": "./images/MSI-RTX3060Ti-resize.png",
         "price": 360,
         "quantity": 0,
-        "stock": 150,
+        "stock": 5,
         "in_stock": true,
         "type": "GPU",
         "description": "VRAM: 8GB | Clock Speed: 1695MHz"
@@ -34,7 +34,7 @@
         "image": "./images/Powercolor-Radeon-6600-resize.jpeg",
         "price": 220,
         "quantity": 0,
-        "stock": 300,
+        "stock": 5,
         "in_stock": true,
         "type": "GPU",
         "description": "VRAM: 8GB | Clock Speed: 2044MHz"
@@ -44,7 +44,7 @@
         "image": "./images/Corsair-Vengeance-DDR4-8gb-resize.jpeg",
         "price": 25,
         "quantity": 0,
-        "stock": 350,
+        "stock": 5,
         "in_stock": true,
         "type": "RAM",
         "description": "Memory: DDR4 8GB | Clock Speed: 2400MHz C16"
@@ -54,7 +54,7 @@
         "image": "./images/RAM-Vengeance-ProRGB-16GB-resize.jpeg",
         "price": 65,
         "quantity": 0,
-        "stock": 200,
+        "stock": 5,
         "in_stock": true,
         "type": "RAM",
         "description": "Memory: DDR4 8GB x2 | Clock Speed: 3200MHz C16"
@@ -64,7 +64,7 @@
         "image": "./images/MSI-MPG-Z490-resize.jpg",
         "price": 200,
         "quantity": 130,
-        "stock": 150,
+        "stock": 5,
         "in_stock": true,
         "type": "MB",
         "description": "Form Factor: ATX | Chipset: LGA 1200"
@@ -74,7 +74,7 @@
         "image": "./images/ASUS ROG STRIX Z790-H-resize.jpg",
         "price": 300,
         "quantity": 0,
-        "stock": 150,
+        "stock": 5,
         "in_stock": true,
         "type": "MB",
         "description": "Form Factor: ATX | Chipset: LGA 1700"
@@ -84,7 +84,7 @@
         "image": "./images/980pro-ssd-resize.jpeg",
         "price": 90,
         "quantity": 0,
-        "stock": 220,
+        "stock": 5,
         "in_stock": true,
         "type": "Storage",
         "description": "Storage: M.2 NVMe™ SSD 1TB | Data Transfer Rate:3500MB/s"
@@ -94,7 +94,7 @@
         "image": "./images/hdd-resize.png",
         "price": 100,
         "quantity": 0,
-        "stock": 100,
+        "stock": 5,
         "in_stock": true,
         "type": "Storage",
         "description": "Storage: Sata HDD 8TB | Data Transfer Rate:6Gb/s"
@@ -104,7 +104,7 @@
         "image": "./images/Corsair-4000D-resize.jpeg",
         "price": 95,
         "quantity": 0,
-        "stock": 400,
+        "stock": 5,
         "in_stock": true,
         "type": "Case",
         "description": "Form Factor: Mid-Tower"
@@ -114,7 +114,7 @@
         "image": "./images/Thermaltake-Versa-H18-resize.jpeg",
         "price": 50,
         "quantity": 0,
-        "stock": 500,
+        "stock": 5,
         "in_stock": true,
         "type": "Case",
         "description": "Form Factor: Micro ATX"
