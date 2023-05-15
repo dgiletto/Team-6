@@ -28,6 +28,7 @@
     font-family: sans-serif, bold;
     text-align: left;
     margin-left: 5%;
+    margin-right: 70%;
 }
 
 .Navigation-bar {
@@ -52,6 +53,11 @@
 
 .App-link {
     color: #000000;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
 }
 
 @keyframes App-logo-spin {

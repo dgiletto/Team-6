@@ -1,4 +1,6 @@
 import React from "react";
+import signInIcon from "./images/SignInIcon.png";
+import signOutIcon from "./images/SignOutIcon.png";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navigate } from "./components/Navigation";
@@ -12,6 +14,7 @@ import { Cases } from "./pages/CasesPage";
 import { SignupPage } from "./pages/SignupPage";
 import { SigninPage } from "./pages/SignInPage";
 import { Admin } from "./pages/AdminPage";
+import AuthDetails from "./firebase-setup/AuthDetails";
 //import { Admin } from "./pages/AdminPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
@@ -36,9 +39,19 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                <div className="Website-name">PCMart</div>
+                <div className="flex-container">
+                    <div className="Website-name">PCMart</div>
+                    <div className="margin-right">
+                        <a href="/signup" rel="noreferrer">
+                            <img src={signInIcon} alt="Sign In Icon" />
+                        </a>
+                        <a href="/signin" rel="noreferrer">
+                            <img src={signOutIcon} alt="Logout Icon" />
+                        </a>
+                        <AuthDetails></AuthDetails>
+                    </div>
+                </div>
             </header>
-            {/*<Button onClick={() => console.log("uid is " + uid)}>Click</Button>*/}
             <ShoppingCartProvider>
                 <BrowserRouter>
                     <Navigate />
@@ -54,8 +67,8 @@ function App(): JSX.Element {
                             <Route path="/mboards" element={<MBoards />} />
                             <Route path="/storage" element={<Storage />} />
                             <Route path="/cases" element={<Cases />} />
-                            <Route path="/signup" element={<SignupPage />} />
                             <Route path="/signin" element={<SigninPage />} />
+                            <Route path="/signup" element={<SignupPage />} />
                             <Route path="/admin" element={<Admin />} />
                             <Route path="*" element={<Home />} />
                         </Routes>
