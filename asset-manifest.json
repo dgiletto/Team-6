@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team-6/static/css/main.fa3e3949.css",
-    "main.js": "/Team-6/static/js/main.6700ff9f.js",
+    "main.js": "/Team-6/static/js/main.26a3e32f.js",
     "static/js/787.9a502bfc.chunk.js": "/Team-6/static/js/787.9a502bfc.chunk.js",
     "static/media/i9-13900k-resize.png": "/Team-6/static/media/i9-13900k-resize.c0140cdc3ccc4086bbac.png",
     "static/media/MSI-RTX3060Ti-resize.png": "/Team-6/static/media/MSI-RTX3060Ti-resize.e3fc234fc12998ea05c0.png",
@@ -12,11 +12,11 @@
     "static/media/Powercolor-Radeon-6600-resize.jpeg": "/Team-6/static/media/Powercolor-Radeon-6600-resize.12ae1bb75f0520f04c38.jpeg",
     "index.html": "/Team-6/index.html",
     "main.fa3e3949.css.map": "/Team-6/static/css/main.fa3e3949.css.map",
-    "main.6700ff9f.js.map": "/Team-6/static/js/main.6700ff9f.js.map",
+    "main.26a3e32f.js.map": "/Team-6/static/js/main.26a3e32f.js.map",
     "787.9a502bfc.chunk.js.map": "/Team-6/static/js/787.9a502bfc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa3e3949.css",
-    "static/js/main.6700ff9f.js"
+    "static/js/main.26a3e32f.js"
   ]
 }
