@@ -4,8 +4,14 @@ import Modal, { ModalProps } from "react-bootstrap/Modal";
 import { useShoppingCart } from "./context/shoppingCartContext";
 
 export function ModalView(props: ModalProps) {
-    const { getItemQty, increaseCartQty, decreaseCartQty, removeFromCart } =
-        useShoppingCart();
+    const {
+        getItemQty,
+        increaseItemQty,
+        decreaseItemQty,
+        increaseCartQty,
+        decreaseCartQty,
+        removeFromCart
+    } = useShoppingCart();
     const amount = getItemQty(props.name);
     return (
         <Modal
@@ -43,22 +49,31 @@ export function ModalView(props: ModalProps) {
                     style={{ gap: ".5rem" }}
                 >
                     <Button
-                        onClick={() =>
+                        onClick={() => {
                             amount > 1
                                 ? decreaseCartQty(props.name)
-                                : removeFromCart(props.name)
-                        }
+                                : removeFromCart(props.name);
+                            increaseItemQty(props.name, 1);
+                        }}
                     >
                         -
                     </Button>
                     {amount} in cart
-                    <Button onClick={() => increaseCartQty(props.name)}>
+                    <Button
+                        onClick={() => {
+                            increaseCartQty(props.name);
+                            decreaseItemQty(props.name);
+                        }}
+                    >
                         +
                     </Button>
                 </div>
                 <Button
                     variant="outline-danger"
-                    onClick={() => removeFromCart(props.name)}
+                    onClick={() => {
+                        removeFromCart(props.name);
+                        increaseItemQty(props.name, props.quantity);
+                    }}
                 >
                     Remove
                 </Button>
