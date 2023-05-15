@@ -37,7 +37,7 @@ function App(): JSX.Element {
             <header className="App-header">
                 <div className="Website-name">PCMart</div>
             </header>
-            <Button onClick={() => console.log("uid is " + uid)}>Click</Button>
+            {/*<Button onClick={() => console.log("uid is " + uid)}>Click</Button>*/}
             <ShoppingCartProvider>
                 <BrowserRouter>
                     <Navigate />

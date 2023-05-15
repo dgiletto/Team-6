@@ -6,13 +6,14 @@ import { useShoppingCart } from "./context/shoppingCartContext";
 export function ModalView(props: ModalProps) {
     const {
         getItemQty,
-        increaseItemQty,
-        decreaseItemQty,
         increaseCartQty,
         decreaseCartQty,
-        removeFromCart
+        removeFromCart,
+        increaseItemQty,
+        decreaseItemQty
     } = useShoppingCart();
     const amount = getItemQty(props.name);
+
     return (
         <Modal
             {...props}
@@ -42,24 +43,24 @@ export function ModalView(props: ModalProps) {
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <Button> Add To Cart</Button>
-                <Button onClick={props.onHide}>Cancel</Button>
                 <div
                     className="d-flex align-items-center justify-content-left"
                     style={{ gap: ".5rem" }}
                 >
                     <Button
+                        disabled={amount <= 0}
                         onClick={() => {
+                            increaseItemQty(props.name, 1);
                             amount > 1
                                 ? decreaseCartQty(props.name)
                                 : removeFromCart(props.name);
-                            increaseItemQty(props.name, 1);
                         }}
                     >
                         -
                     </Button>
                     {amount} in cart
                     <Button
+                        disabled={amount >= props.stock}
                         onClick={() => {
                             increaseCartQty(props.name);
                             decreaseItemQty(props.name);
@@ -72,7 +73,7 @@ export function ModalView(props: ModalProps) {
                     variant="outline-danger"
                     onClick={() => {
                         removeFromCart(props.name);
-                        increaseItemQty(props.name, props.quantity);
+                        increaseItemQty(props.name, amount);
                     }}
                 >
                     Remove

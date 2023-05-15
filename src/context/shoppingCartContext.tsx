@@ -54,7 +54,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         products.map((product) => {
             if (product.name === name) {
                 if (amount > 1) {
-                    product.stock = product.stock + amount - 1;
+                    product.stock = product.stock + amount;
                 } else {
                     product.stock = product.stock + 1;
                 }

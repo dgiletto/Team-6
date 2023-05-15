@@ -4,7 +4,7 @@
         "image": "./images/i9-13900k-resize.png",
         "price": 580,
         "quantity": 0,
-        "stock": 4,
+        "stock": 5,
         "in_stock": true,
         "type": "CPU",
         "description": "Cores: 24 cores (8 P-cores + 16 E-cores), 32 Threads | Base Clock Speed: 3.00GHz (P-core), 2.20GHz (E-core) | Boost Clock Speed: 5.40GHz (P-core), 4.30GHz (E-core)"
@@ -63,7 +63,7 @@
         "name": "MSI MPG Z490",
         "image": "./images/MSI-MPG-Z490-resize.jpg",
         "price": 200,
-        "quantity": 130,
+        "quantity": 0,
         "stock": 5,
         "in_stock": true,
         "type": "MB",
