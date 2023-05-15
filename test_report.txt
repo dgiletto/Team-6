@@ -5,7 +5,7 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/Tests/InventoryTesting.test.tsx (5.197 s)
+PASS src/Tests/InventoryTesting.test.tsx
 PASS src/Tests/CheckoutTesting.test.tsx
 PASS src/Tests/CartTesting.test.tsx
 PASS src/Tests/AdminTesting.test.tsx
@@ -13,10 +13,10 @@ PASS src/Tests/SignupTesting.test.tsx
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |   37.34 |    18.75 |   30.68 |   38.35 |                   
- src                      |   46.87 |    16.66 |   30.76 |   46.87 |                   
+All files                 |   36.64 |    18.75 |   30.68 |   37.58 |                   
+ src                      |   42.85 |    16.66 |   30.76 |   42.85 |                   
   App.tsx                 |       0 |        0 |       0 |       0 | 25-40             
-  ModalView.tsx           |      50 |        0 |      25 |      50 | 47-61             
+  ModalView.tsx           |   33.33 |        0 |      25 |   33.33 | 53-75             
   Products.tsx            |    64.7 |       50 |   42.85 |    64.7 | 54-98             
   firebase.ts             |       0 |      100 |     100 |       0 | 4-13              
   images.tsx              |     100 |      100 |     100 |     100 |                   
@@ -53,5 +53,5 @@ All files                 |   37.34 |    18.75 |   30.68 |   38.35 |
 Test Suites: 5 passed, 5 total
 Tests:       17 passed, 17 total
 Snapshots:   0 total
-Time:        11.75 s
+Time:        10.128 s
 Ran all test suites.
