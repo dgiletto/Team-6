@@ -16,18 +16,19 @@ import { Admin } from "./pages/AdminPage";
 //import { Product } from "./interfaces/products";
 //import { Order } from "./interfaces/orders";
 //import { Account } from "./interfaces/accounts";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { ShoppingCartProvider } from "./context/shoppingCartContext";
-import { auth } from "./firebase-setup/firebase";
+//import { auth } from "./firebase-setup/firebase";
 
 function App(): JSX.Element {
-    //const navigate = useNavigate();
+    /*
+    const navigate = useNavigate();
     const user = auth.currentUser;
     let uid = "no user";
     if (user) {
         uid = user.uid;
     }
-    /*     {
+         {
         uid === "l2c8ViQj35RaGm06xy0MVJ82wQk2" && (
             <Route path="/admin" element={<Admin />} />
         );
