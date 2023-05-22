@@ -73,6 +73,26 @@ export function Navigate() {
                     Cases
                 </NavLink>
                 <NavLink
+                    hidden={true}
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/signup"
+                >
+                    Sign Up
+                </NavLink>
+                <NavLink
+                    hidden={true}
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/signin"
+                >
+                    Sign In
+                </NavLink>
+                <NavLink
                     className="NavLinks"
                     style={({ isActive }) =>
                         isActive ? { color: "#326bdc" } : { color: "#829fda" }
