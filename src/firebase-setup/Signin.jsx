@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import { Form, Button, Card } from "react-bootstrap";
+import AuthDetails from "./AuthDetails";
 
 export default function Signin() {
     const [email, SetEmail] = useState("");
@@ -61,6 +62,7 @@ export default function Signin() {
                     </div>
                 </Form>
             </Card>
+            <AuthDetails></AuthDetails>
         </>
     );
 }

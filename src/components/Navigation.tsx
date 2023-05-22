@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/shoppingCartContext";
-//import "./Navigation.css";
 
 export function Navigate() {
     const { openCart, cartQuantity } = useShoppingCart();
@@ -85,6 +84,24 @@ export function Navigate() {
                 </NavLink>
                 <NavLink
                     hidden={true}
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/signin"
+                >
+                    Sign In
+                </NavLink>
+                <NavLink
+                    className="NavLinks"
+                    style={({ isActive }) =>
+                        isActive ? { color: "#326bdc" } : { color: "#829fda" }
+                    }
+                    to="/signup"
+                >
+                    Sign Up
+                </NavLink>
+                <NavLink
                     className="NavLinks"
                     style={({ isActive }) =>
                         isActive ? { color: "#326bdc" } : { color: "#829fda" }

@@ -1,6 +1,4 @@
 import React from "react";
-import signInIcon from "./images/SignInIcon.png";
-import signOutIcon from "./images/SignOutIcon.png";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navigate } from "./components/Navigation";
@@ -15,41 +13,16 @@ import { SignupPage } from "./pages/SignupPage";
 import { SigninPage } from "./pages/SignInPage";
 import { Admin } from "./pages/AdminPage";
 import AuthDetails from "./firebase-setup/AuthDetails";
-//import { Admin } from "./pages/AdminPage";
-//import { Product } from "./interfaces/products";
-//import { Order } from "./interfaces/orders";
-//import { Account } from "./interfaces/accounts";
 import { Container } from "react-bootstrap";
 import { ShoppingCartProvider } from "./context/shoppingCartContext";
-//import { auth } from "./firebase-setup/firebase";
 
 function App(): JSX.Element {
-    /*
-    const navigate = useNavigate();
-    const user = auth.currentUser;
-    let uid = "no user";
-    if (user) {
-        uid = user.uid;
-    }
-         {
-        uid === "l2c8ViQj35RaGm06xy0MVJ82wQk2" && (
-            <Route path="/admin" element={<Admin />} />
-        );
-    } */
     return (
         <div className="App">
             <header className="App-header">
                 <div className="flex-container">
                     <div className="Website-name">PCMart</div>
-                    <div className="margin-right">
-                        <a href="/signup" rel="noreferrer">
-                            <img src={signInIcon} alt="Sign In Icon" />
-                        </a>
-                        <a href="/signin" rel="noreferrer">
-                            <img src={signOutIcon} alt="Logout Icon" />
-                        </a>
-                        <AuthDetails></AuthDetails>
-                    </div>
+                    <AuthDetails></AuthDetails>
                 </div>
             </header>
             <ShoppingCartProvider>
